@@ -1,0 +1,46 @@
+.HostingAllHaneen{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    border: 1px solid #cbcbcb;
+    box-shadow: 0px 0px 3px 2px #ddd;
+    border-radius: 1px;
+    padding: 1.5em;
+    justify-items: center;
+    min-height: 60vh;
+}
+
+.HostingAllHaneen   .HostingAllHaneenInformation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HostingAllHaneenInformation .HostingAllTitle1Haneen{
+    border: 2px solid #4096f1;
+    border-radius:25px;
+    margin: 1em 0;
+    padding: 0 0.9em;
+}
+
+.HostingAllHaneenInformation .HostingAllTitle1Haneen p{
+    margin: auto 0;
+    color:#4096f1;
+    font-weight: 700;
+}
+
+.HostingAllHaneenInformation .HostingAllPriceHaneen p{
+    color:#4096f1;
+    font-weight: 900;
+}
+
+    
+.HostingAllHaneenInformation    .HostingAllTitle2Haneen h4{
+    font-weight: 700;
+}
+
+@media (max-width:1100px) {
+    .HostingAllHaneen{
+        /* min-height: 70vh; */
+    }
+}
