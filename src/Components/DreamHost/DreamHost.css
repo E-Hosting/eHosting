@@ -1,0 +1,39 @@
+.dreamhostContainer {
+  text-align: center;
+  margin-top: 5em;
+}
+
+.dreamHostAll {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+.dreamHost {
+  width: 21%;
+}
+.dreamHost img {
+  width: 55px;
+  height: 50px;
+  margin: 2em 0;
+}
+.dreamHost p {
+  text-align: unset;
+}
+@media only screen and (max-width: 768px) {
+    .dreamHostAll {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+      }
+      .dreamHost {
+        width:100%;
+      }
+}
+@media only screen and (max-width: 450px) {
+    .dreamHostAll {
+        
+        grid-template-columns:  1fr;
+        
+      }
+}
