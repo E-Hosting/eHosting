@@ -1,0 +1,22 @@
+.onequestion {
+  display: block;
+  width: 60%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1.5px solid #ced4da;
+  border-radius: 0.25rem;
+  margin: 1em auto;
+  -webkit-box-shadow: 4px 4px 7px -1px rgba(130, 130, 130, 0.71);
+  -moz-box-shadow: 4px 4px 7px -1px rgba(130, 130, 130, 0.71);
+  box-shadow: 4px 4px 7px -1px rgba(130, 130, 130, 0.71);
+}
+.question-itself p {
+  color: blue;
+}
+.questionTitle {
+  text-align: center;
+  padding: 1em;
+}
