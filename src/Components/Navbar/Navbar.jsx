@@ -2,10 +2,11 @@ import React from "react";
 import "./navbar.css"
 import {Link} from "react-router-dom"
 import Footer from "../Footer/Footer";
+import Checkout from "../Checkout/Checkout";
 function Navbar() {
       return(
             <>
-      <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-light fixed">
       <div className="container-fluid">
       <a className="navbar-brand" href="#">E Hosting</a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
