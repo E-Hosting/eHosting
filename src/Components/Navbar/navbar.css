@@ -1,0 +1,39 @@
+nav {
+      background-color: #0050A3;
+      padding: 15px 0 !important;
+}
+
+nav .dropdown-menu {
+      background-color: #0050A3 !important;
+}
+
+nav a.navbar-brand {
+      color: white !important;
+      font-weight: 700;
+}
+nav .nav-item a {
+      color: white !important;
+      font-weight: 500;
+}
+
+nav .nav-item a:hover {
+      color: #087dfa !important;
+      transition: all .3s ease;
+}
+
+.loginButton {
+      color: white;
+      border: 1px solid #0073EC;
+      background-color: #0073EC;
+      margin-top: 5px;
+      width: 90px;
+      padding: 5px 5px;
+      border-radius: 5px;
+      margin-left: 10px;
+}
+
+.loginButton:hover {
+      border: 1px solid white;
+      transition: all .5s ease-in-out;
+
+}
