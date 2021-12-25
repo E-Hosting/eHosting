@@ -1,0 +1,33 @@
+.HostingWebsiteHaneen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f6f9;
+    margin: 2em 0;
+}
+
+.HostingWebsiteHaneen .HostingWebsitetitleHaneen{
+    margin-bottom: 2em;
+}
+
+.HostingWebsiteHaneen .HostingWebsiteArrHaneen {
+    display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2em;  
+  margin: 2em 0;
+  width: 70%;
+}
+
+@media (max-width:1100px) {
+
+  .HostingWebsiteHaneen .HostingWebsiteArrHaneen {
+      width: 85%;
+    }
+}
+
+@media (max-width:680px) {
+    .HostingWebsiteHaneen .HostingWebsiteArrHaneen {
+     grid-template-columns: 1fr;
+     
+    }
+}
