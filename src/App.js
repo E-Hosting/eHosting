@@ -9,6 +9,11 @@ import Login from "./Components/LogIn/Login"
 import Register from "./Components/Register/Register"
 import Services from './Components/Services/Services';
 import Aboutus from './Page/Aboutus';
+// import WordPressHosting from './Components/Hosting/WordPressHosting';
+import Hosting from './Components/Hosting/Hosting';
+import Calender from './Components/Calender/Calender';
+import OurCourse from './Page/OurCourse'
+
 function App() {
   return (
   
@@ -21,10 +26,19 @@ function App() {
     <Route path="/Register" element={<Register />}/>
     <Route path="/Services" element={<Services />}/>
     <Route path="/Aboutus" element={<Aboutus />}/>
+    <Route path="/Hosting" element={<Hosting/> }/>
+    {/* <Route path="/Calender" element={<Calender /> } /> */}
+    <Route path='/OurCourse' element={<OurCourse/>}/>
+    <Route path='/Checkout' element={<Checkout/>}/>
+
 
     </Routes>
     <Footer />
     </BrowserRouter>
+    // <div>
+    // <Hosting/>
+    // <WordPressHosting/>
+    // </div>
     
   );
 }

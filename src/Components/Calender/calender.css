@@ -1,3 +1,33 @@
+.calender-controls {
+  min-height: 100vh;
+}
+
+form.calender-form {
+  flex-direction: column;
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.time-slots-input {
+  display: block;
+  width: 90%;
+  border: 0;
+  background-color: #e3f0ff;
+  padding: 0.7em;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 1;
+  transition: box-shadow 0.22s ease-out;
+  height: auto;
+  margin: 1.3em 0;
+  border: 1px solid #afcbeb;
+}
+
+.label-container {
+  width: 90%;
+  font-weight: 600;
+}
 .LogInToqa {
   display: flex;
   flex-direction: row;
@@ -7,18 +37,18 @@
   padding: 70px 0;
 }
 
-.TitleLogInAndImg img {
+.calender-titleimg {
   width: 32em;
   height: 20em;
 }
 
-.TitleLogInAndImg {
+.calender-title {
   margin-bottom: 1rem;
   max-width: 100%;
   height: auto;
 }
 
-.TitleLogInAndImg h3 {
+.calender-title h3 {
   align-items: center;
   margin-left: 3em;
   font-family: "Proxima Nova", proxima-nova, sans-serif;
@@ -27,7 +57,7 @@
   color: #103760;
   line-height: 1;
 }
-.TitleLogInAndImg p {
+.calender-titlep {
   margin-left: 4em;
   font-size: 1.5rem;
   color: #434f58 !important;
@@ -39,9 +69,7 @@
   margin-bottom: 0;
 }
 
-.LogInForm {
-  /* border:  1px green solid; */
-  /* height: 50%; */
+.render-calender-form {
   width: 35%;
   background-color: #ffffff;
   height: 37em;
@@ -51,8 +79,10 @@
   align-items: center;
   flex-direction: column;
   border-radius: 2%;
+  margin-left: 2em;
 }
-.contactLogInForm {
+
+.calender-form {
   /* border: 1px solid red; */
   width: 90%;
   align-items: center;
@@ -60,7 +90,7 @@
   flex-direction: column;
   display: flex;
 }
-.contactLogInForm input {
+.calender-form input {
   display: block;
   width: 90%;
   border: 0;
@@ -72,12 +102,10 @@
   transition: box-shadow 0.22s ease-out;
   height: 3rem;
   margin: 1.3em 0;
-  /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
+  border: 1px solid #afcbeb;
 }
 
-.submitLoginForm {
+.submit-calender {
   margin: 8px 0;
   width: 90%;
   opacity: 0.9;
@@ -85,7 +113,7 @@
   background-color: #0073ec;
   color: white;
   border: solid 1px #0073ec;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 0.75rem 2rem 0.625rem;
   font-weight: 600;
   transition: all 0.2s ease-in-out;
@@ -93,11 +121,11 @@
 }
 
 @media (max-width: 1000px) {
-  .TitleLogInAndImg {
+  .calender-title {
     display: none;
   }
 
-  .LogInForm {
+  .render-calender-form {
     width: 90%;
   }
 }

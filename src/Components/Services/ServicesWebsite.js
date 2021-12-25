@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import HostingServices from "./HostingServices";
 
 export default function ServicesWebsite(){
@@ -6,7 +7,7 @@ export default function ServicesWebsite(){
         {
           id: "1",
           src: "../img/Website.png",
-          title: "Website Hosting",
+          title: "Courses",
           description: "Shared Website Hosting gives you a free domain name, fast SSD storage and email hosting for your website",
           price: "Starting at: $1.99/mo",
         },
@@ -23,8 +24,11 @@ export default function ServicesWebsite(){
         
     })
     return(
-        <div className="ServicesWebsiteHaneen">
-               {ServicesWebsite}
+        <Link to="/Hosting">
+        <div className="ServicesWebsiteHaneen" >
+        {ServicesWebsite}
+        
         </div>
+        </Link>
     )
 }
