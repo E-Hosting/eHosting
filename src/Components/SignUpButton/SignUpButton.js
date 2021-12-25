@@ -8,9 +8,9 @@ export default function SignUpButton(props) {
     const obj1 = props.obj;
     const TitleCourse = localStorage.setItem(
         "TitleCourse",
-    JSON.stringify({ obj1 })
+      JSON.stringify(obj1 )
     );
-    console.log(obj1);
+    // console.log(obj1);
 
     // const checkLogInUser = localStorage.getItem("uerLogin");
     // console.log(checkLogInUser);
@@ -23,7 +23,7 @@ export default function SignUpButton(props) {
 
     return (
     <div className="SignUpDiv">
-        <Link to ="/Calender" >
+        <Link to ="/OurCourse" >
         <button className="SignUpButton" onClick={handelClickSignUp}>
         {" "}
         Sign Up Now

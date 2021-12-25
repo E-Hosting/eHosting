@@ -2,6 +2,7 @@ import React from "react";
 import HostingAll from "./HostingAll";
 import WordPressHosting from "./WordPressHosting";
 import '../Hosting/Hosting.css'
+import CourseDateils from "../../Page/CourseDateils";
 
 export default function Hosting(){
    const HostingArr=[
@@ -104,6 +105,7 @@ export default function Hosting(){
      
              {Hosting}
         {/* <WordPressHosting  HostingArr={HostingArr}/> */}
+    
         </div>
        
     )
