@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './login.css';
-
+import { Link } from 'react-router-dom';
 export default function Login() {
     const [email,setEmail]=useState();
     const [password,setPassword]=useState();
@@ -51,7 +51,7 @@ export default function Login() {
 
         </form>
         <p>You dont have already account ?  
-        <a href="#"> Sign Up</a>
+        <Link to="/register"> Sign Up</Link>
         </p>
         </div>
         </div>
