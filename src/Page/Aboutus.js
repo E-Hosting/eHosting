@@ -1,8 +1,8 @@
 import React from "react";
-import CoreValue from "../Components/CoreValue";
-import DigitalPresence from "../Components/DigitalPresence";
-import JoinTeam from "../Components/JoinTeam";
-import FrequentlyQ from "../Components/FrequentlyQ"
+import FrequentlyQ from "../Components/AboutUs/FrequentlyQ";
+import CoreValue from "../Components/AboutUs/CoreValue";
+import DigitalPresence from "../Components/AboutUs/DigitalPresence";
+import JoinTeam from "../Components/AboutUs/JoinTeam";
 
 function Aboutus() {
   return (
