@@ -1,15 +1,17 @@
 import React from "react";
 import './DreamHost.css'
+import { Link } from "react-router-dom";
 
 const Dreamhost = () => {
     return (
         <section className="dreamhostContainer">
-            <h1>DreamHost Helps You Succeed</h1>
-            <p>Grow your website faster by using DreamHost as your foundation.</p>
+            <div className="headingHome">
+            <h1>Start learning from the world’s <br />best institutions </h1>
+            <Link to="/Hosting" className="text-left">Explore all courses</Link>
+            <h1 className="text-center pt-5 headingWhy">Why us?</h1>
+            </div>
             <div className="dreamHostAll">
-
                 <div className="dreamHost">
-
                     <img src="img/imgHost/img1.png" alt="...." />
                     <h3>Super Easy to Use</h3>
                     <p>Our custom control panel is simple to use and removes the headache of managing your web hosting.</p>
