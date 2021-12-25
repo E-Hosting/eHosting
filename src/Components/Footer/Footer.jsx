@@ -49,7 +49,7 @@ function Footer(){
             <div className="col-lg-3 col-md-6 footer-info">
             <h3>About E Hosting</h3>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-            <div className="social-links mt-3"> <Link to="#" className="twitter"><i class="fab fa-instagram"></i></Link> <Link to="#" className="facebook"><i class="fab fa-facebook"></i></Link> <Link to="#" className="instagram"><i class="fab fa-twitter"></i></Link> <Link to="#" className="linkedin"><i class="fab fa-linkedin"></i></Link> </div>
+            <div className="social-links mt-3"> <Link to="#" className="twitter"><i className="fab fa-instagram"></i></Link> <Link to="#" className="facebook"><i className="fab fa-facebook"></i></Link> <Link to="#" className="instagram"><i className="fab fa-twitter"></i></Link> <Link to="#" className="linkedin"><i className="fab fa-linkedin"></i></Link> </div>
             </div>
             </div>
       </div>

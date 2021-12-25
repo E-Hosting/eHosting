@@ -3,6 +3,7 @@ import React from "react";
 import "./Checkout.css"
 
 function Checkout() {
+
       return(
       <>
       <div className="container">
@@ -24,7 +25,7 @@ function Checkout() {
             </div>
             <div>
             <label htmlFor="address">Address</label>
-            <input type="text" id="address"/>
+            <input type="text" id="address" />
             </div>
             <hr className="my-4" />
             <button type="submit">Submit</button>
