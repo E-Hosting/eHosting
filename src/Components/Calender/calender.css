@@ -1,6 +1,4 @@
-.calender-controls {
-  min-height: 100vh;
-}
+
 
 form.calender-form {
   flex-direction: column;
@@ -70,9 +68,9 @@ form.calender-form {
 }
 
 .render-calender-form {
-  width: 35%;
+  /* width: 35%; */
   background-color: #ffffff;
-  height: 37em;
+  /* height: 37em; */
   box-shadow: 0 0 10px rgb(0 0 0 / 20%);
   justify-content: center;
   display: flex;
@@ -80,6 +78,7 @@ form.calender-form {
   flex-direction: column;
   border-radius: 2%;
   margin-left: 2em;
+  padding: 2em 0;
 }
 
 .calender-form {
@@ -120,12 +119,22 @@ form.calender-form {
   cursor: pointer;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .calender-title {
     display: none;
   }
 
   .render-calender-form {
-    width: 90%;
+    width: 100%;
+    margin: 0  ;
+
   }
+  .CalenderOurCourse{
+    width: 100%;
+  }
+
 }
+
+
+
+

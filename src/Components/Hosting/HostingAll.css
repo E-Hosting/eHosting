@@ -4,7 +4,7 @@
     background-color: white;
     border: 1px solid #cbcbcb;
     box-shadow: 0px 0px 3px 2px #ddd;
-    border-radius: 1px;
+    border-radius: 2% ;
     padding: 1.5em;
     justify-items: center;
     min-height: 60vh;
@@ -39,8 +39,9 @@
     font-weight: 700;
 }
 
-@media (max-width:1100px) {
+@media (max-width:1180px) {
     .HostingAllHaneen{
         /* min-height: 70vh; */
+        font-size: .9em;
     }
 }
