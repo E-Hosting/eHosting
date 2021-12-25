@@ -21,34 +21,117 @@ function Calender() {
     time: "",
     id: 0,
   });
+  const fullTimeSlots = [
+    { text: "Please Select", value: "" },
+    { text: "08-09", value: "08-09" },
+    { text: "09-10", value: "09-10" },
+    { text: "10-11", value: "10-11" },
+    { text: "12-13", value: "12-13" },
+    { text: "13-14", value: "13-14" },
+  ];
+  const [timeSlots, setTimeSlots] = useState(fullTimeSlots);
+  const [minEndDate, setMinEndDate] = useState(minDateValue);
+
   const dateChangeHandlerFirst = (e, attr) => {
     setEnteredDateFirst(e.target.value);
+    console.log(enteredDateFirst);
     setForm({ ...form, [attr]: e.target.value });
+    setTimeSlots(fullTimeSlots);
+    // let selectedDate = stringToDate(e.target.value);
+    // selectedDate.setDate(selectedDate.getDate());
+    // let newMinDate = dateToString(selectedDate);
+    // console.log(selectedDate);
+    // setMinEndDate(newMinDate);
   };
   const handelSelect = (e, attr) => {
     setForm({ ...form, [attr]: e.target.value });
   };
   const dateChangeHandlerLast = (e, attr) => {
+    setTimeSlots(fullTimeSlots);
     setEnteredDateEnd(e.target.value);
+    // get the value from the array of items to check the selected dates and time .
+    let ourArray = localStorage.getItem("timeOfCourse")
+      ? JSON.parse(localStorage.getItem("timeOfCourse"))
+      : [];
+    if (ourArray.length > 0) {
+      let filteredArray = ourArray.filter((element) => {
+        // get intersection cases.
+        let isIntersected =
+          (stringToDate(element.startDate) <= stringToDate(enteredDateFirst) &&
+            stringToDate(element.endDate) > stringToDate(enteredDateFirst)) ||
+          (stringToDate(element.startDate) < stringToDate(enteredDateEnd) &&
+            stringToDate(element.endDate) > stringToDate(enteredDateEnd)) ||
+          (stringToDate(element.startDate) >= stringToDate(enteredDateFirst) &&
+            stringToDate(element.endDate) <= stringToDate(enteredDateEnd)) ||
+          (stringToDate(element.startDate) <= stringToDate(enteredDateFirst) &&
+            stringToDate(element.endDate) >= stringToDate(enteredDateEnd));
+        return isIntersected;
+      });
+      console.log("intersected list");
+      console.log(filteredArray);
+      // remove intersected periods.
+      let resultTimeSlots = timeSlots;
+      filteredArray.forEach((element) => {
+        let filteredTimes = timeSlots.filter((timeElement) => {
+          console.log(timeElement.value + " ---  " + element.time);
+          return timeElement.value === element.time;
+        });
+
+        console.log("filtered times");
+        console.log(filteredTimes);
+        // if there is intersected timeslot remove the intersected time
+        if (filteredTimes.length > 0) {
+          let index = resultTimeSlots.indexOf(filteredTimes[0]);
+          resultTimeSlots.splice(index, 1);
+        }
+      });
+      setTimeSlots(resultTimeSlots);
+      console.log("result after complete");
+      console.log(resultTimeSlots);
+    }
     setForm({ ...form, [attr]: e.target.value });
   };
   const handelSubmit = (e) => {
     e.preventDefault();
-    setForm({ ...form, id: form.id + 1 });
-    console.log(form.id);
+
+    // get the saved array from local storage, if no data was saved, create empty array.
     let ourArray = localStorage.getItem("timeOfCourse")
       ? JSON.parse(localStorage.getItem("timeOfCourse"))
       : [];
+
+    // get the latest ID from the local storage saved data, if exists
+    let latestId = ourArray.length > 0 ? ourArray[ourArray.length - 1].id : 0;
+
+    setForm({ ...form, id: ++latestId });
+    console.log(latestId);
+    form.id = latestId;
     ourArray.push(form);
     localStorage.setItem("timeOfCourse", JSON.stringify(ourArray));
     setEnteredDateFirst("");
     setEnteredDateEnd("");
+    setForm({ ...form, time: "" });
 
     console.log(enteredDateFirst);
     console.log(enteredDateEnd);
     console.log(form);
   };
+  const stringToDate = (stringDate) => {
+    let stringDateValues = ("" + stringDate).split("-");
+    let dateValue = new Date(
+      stringDateValues[0],
+      Number(stringDateValues[1]) - 1,
+      stringDateValues[2]
+    );
+    return dateValue;
+  };
 
+  const dateToString = (dateVal) => {
+    let day = dateVal.getDate();
+    let month = dateVal.getMonth() + 1; //January is 0 so need to add 1 to make it 1!
+    let year = dateVal.getFullYear();
+    let stringDateVal = year + "-" + month + "-" + day;
+    return stringDateVal;
+  };
   return (
     <div className="new-expense__controls">
       <form onSubmit={handelSubmit}>
@@ -79,12 +162,15 @@ function Calender() {
           required
           value={form.time}
         >
-          <option disabled selected value="">
+          {timeSlots.map((item) => {
+            return <option value={item.value}>{item.text}</option>;
+          })}
+          {/* <option disabled selected value="">
             Select a time
           </option>
           <option value="2-5">2-5</option>
           <option value="5-8">5-8</option>
-          <option value="8-11">8-11</option>
+          <option value="8-11">8-11</option> */}
         </select>
         <button>Submit </button>
       </form>
