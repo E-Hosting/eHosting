@@ -1,5 +1,5 @@
 .dreamhostContainer {
-  padding: 70px 0 0 0;
+  padding: 100px 0 0 0;
   text-align: center;
 }
 
@@ -15,8 +15,9 @@
 }
 
 .headingWhy {
-  font-size: 30px !important;
-  color: #0457D0;
+  font-size: 31px !important;
+  margin: 50px 0 0 0;
+  border-top: 1px solid #0456d015;
 }
 
 .headingHome a {
@@ -24,7 +25,7 @@
   font-size: 20px;
   background-color: #0457D0;
   border: 1px solid #0457D0;
-
+  padding-bottom: 5px;
   color: white;
   padding: 10px 25px;
   margin: 10px 0 0 0;

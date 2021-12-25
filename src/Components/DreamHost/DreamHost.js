@@ -8,7 +8,7 @@ const Dreamhost = () => {
             <div className="headingHome">
             <h1>Start learning from the world’s <br />best institutions </h1>
             <Link to="/Hosting" className="text-left">Explore all courses</Link>
-            <h1 className="text-center pt-5 headingWhy">Why us?</h1>
+            <h1 className="text-center pt-5 headingWhy">Why Us ?</h1>
             </div>
             <div className="dreamHostAll">
                 <div className="dreamHost">

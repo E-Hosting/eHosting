@@ -4,6 +4,11 @@
     align-items: center;
     min-height: 100vh;
     justify-content: space-around;
+    padding: 70px 0;
+}
+
+.OurCourseTitle h1 {
+  padding-bottom: 70px;
 }
 
 .OurCourseMain .OurCourseServiceMain {
