@@ -12,27 +12,7 @@ export default function WordPressHosting(props){
             description:'The most affordable way to get all the basics for your WordPress website — perfect if you’re new to WordPress.',
             price: '$1.99/mo',
             Saveup:'Save up to 68% with a 3-Year Plan',
-            wordpress:true,
-        },
-          {
-            id:'1',
-            src :'../img/word2.png',
-            title1:'MANAGED WORDPRESS',
-            title2:'DreamPress',
-            description:'Fast, optimized WordPress Hosting with professional staging, daily & on-demand backups, custom caching + email.',
-            price: '$16.95/mo',
-            Saveup:'Save up to 17% with an Annual Plan',
-            wordpress:true,
-        },
-         {
-            id:'2',
-            src :'../img/word3.png',
-            title1:'POWER MANY SITES',
-            title2:'VPS for WordPress',
-            description:'The ideal way to support 5 WordPress websites. A high-performance platform with isolated resources and more backend control.',
-            price: '$27.50/mo',
-            Saveup:'Save up to 8% with an Annual Plan',
-            wordpress:true,
+            type:'wordpress'
         },
     ]
     // const HostingArr=localStorage.getItem('HostingArr')
