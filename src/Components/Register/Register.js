@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './register.css'
-
+import { Link } from 'react-router-dom';
 export default function Register() {
 
     const [userName,setUserName]=useState();
@@ -97,7 +97,7 @@ export default function Register() {
         <button onClick={submit} className='submitRegisterForm'>Submit</button>
         </form>
         <p>You have already account ?  
-        <a href="#"> LogIn</a>
+        <Link to="/login"> Login</Link>
         </p>
         </div>
         </div>
