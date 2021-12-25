@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./calender.css";
 
 function Calender() {
   //   let minDateValue;
@@ -133,47 +134,61 @@ function Calender() {
     return stringDateVal;
   };
   return (
-    <div className="new-expense__controls">
-      <form onSubmit={handelSubmit}>
-        <label> Starting Date</label>
-        <input
-          type="date"
-          min={minDateValue}
-          max="2026-12-31"
-          value={enteredDateFirst}
-          onChange={(e) => {
-            dateChangeHandlerFirst(e, "startDate");
-          }}
-        />
-        <label> Ending Date</label>
-        <input
-          type="date"
-          min={enteredDateFirst}
-          max="2026-12-31"
-          value={enteredDateEnd}
-          onChange={(e) => {
-            dateChangeHandlerLast(e, "endDate");
-          }}
-        />
-        <select
-          onChange={(e) => {
-            handelSelect(e, "time");
-          }}
-          required
-          value={form.time}
-        >
-          {timeSlots.map((item) => {
-            return <option value={item.value}>{item.text}</option>;
-          })}
-          {/* <option disabled selected value="">
+    <div className="calender-controls">
+      <div className="calender-title">
+        {" "}
+        <h3> Select a Date</h3>{" "}
+      </div>
+      <div className="render-calender-form">
+        <form onSubmit={handelSubmit} className="calender-form">
+          <div className="label-container">
+            <label> Starting Date</label>
+          </div>
+          <input
+            type="date"
+            min={minDateValue}
+            max="2026-12-31"
+            value={enteredDateFirst}
+            onChange={(e) => {
+              dateChangeHandlerFirst(e, "startDate");
+            }}
+          />
+          <div className="label-container">
+            <label> Ending Date</label>
+          </div>
+          <input
+            type="date"
+            min={enteredDateFirst}
+            max="2026-12-31"
+            value={enteredDateEnd}
+            onChange={(e) => {
+              dateChangeHandlerLast(e, "endDate");
+            }}
+          />
+          <div className="label-container">
+            <label> Select Time</label>
+          </div>
+          <select
+            className="time-slots-input"
+            onChange={(e) => {
+              handelSelect(e, "time");
+            }}
+            required
+            value={form.time}
+          >
+            {timeSlots.map((item) => {
+              return <option value={item.value}>{item.text}</option>;
+            })}
+            {/* <option disabled selected value="">
             Select a time
           </option>
           <option value="2-5">2-5</option>
           <option value="5-8">5-8</option>
           <option value="8-11">8-11</option> */}
-        </select>
-        <button>Submit </button>
-      </form>
+          </select>
+          <button className="submit-calender">Submit </button>
+        </form>{" "}
+      </div>
     </div>
   );
 }
