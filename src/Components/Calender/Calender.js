@@ -1,7 +1,21 @@
 import React, { useState } from "react";
+import {  useNavigate } from "react-router-dom";
 import "./calender.css";
+export default function NewPath(){
+  const  navigate=useNavigate();
+  const checkLogInUser = localStorage.getItem("uerLogin");
+    const handelUseNavigate=()=>{
+        if (checkLogInUser !== null) 
+        navigate('/Checkout')
 
-function Calender() {
+        else {
+          navigate('/Login')
+        }
+        
+    }
+    return <Calender handelUseNavigate={handelUseNavigate}/>
+}
+function Calender(props) {
   //   let minDateValue;
   let today = new Date();
   let day = today.getDate();
@@ -92,6 +106,7 @@ function Calender() {
     }
     setForm({ ...form, [attr]: e.target.value });
   };
+  
   const handelSubmit = (e) => {
     e.preventDefault();
 
@@ -108,6 +123,17 @@ function Calender() {
     form.id = latestId;
     ourArray.push(form);
     localStorage.setItem("timeOfCourse", JSON.stringify(ourArray));
+    const checkLogInUser = localStorage.getItem("uerLogin");
+    console.log(checkLogInUser);
+    // console.log(props)
+    if (checkLogInUser !== null) {
+        console.log("go");
+       props.handelUseNavigate();
+    } else {
+        console.log("no");
+        props.handelUseNavigate();
+
+    }
     setEnteredDateFirst("");
     setEnteredDateEnd("");
     setForm({ ...form, time: "" });
@@ -115,6 +141,7 @@ function Calender() {
     console.log(enteredDateFirst);
     console.log(enteredDateEnd);
     console.log(form);
+
   };
   const stringToDate = (stringDate) => {
     let stringDateValues = ("" + stringDate).split("-");
@@ -135,12 +162,9 @@ function Calender() {
   };
   return (
     <div className="calender-controls">
-      <div className="calender-title">
-        {" "}
-        <h3> Select a Date</h3>{" "}
-      </div>
+    
       <div className="render-calender-form">
-        <form onSubmit={handelSubmit} className="calender-form">
+        <form onSubmit={handelSubmit}  className="calender-form">
           <div className="label-container">
             <label> Starting Date</label>
           </div>
@@ -152,6 +176,7 @@ function Calender() {
             onChange={(e) => {
               dateChangeHandlerFirst(e, "startDate");
             }}
+            required
           />
           <div className="label-container">
             <label> Ending Date</label>
@@ -164,6 +189,8 @@ function Calender() {
             onChange={(e) => {
               dateChangeHandlerLast(e, "endDate");
             }}
+            required
+
           />
           <div className="label-container">
             <label> Select Time</label>
@@ -186,11 +213,11 @@ function Calender() {
           <option value="5-8">5-8</option>
           <option value="8-11">8-11</option> */}
           </select>
-          <button className="submit-calender">Submit </button>
+          <button className="submit-calender" >Submit </button>
         </form>{" "}
       </div>
     </div>
   );
 }
 
-export default Calender;
+// export default Calender;
