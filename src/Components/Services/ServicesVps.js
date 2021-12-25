@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import HostingServices from "./HostingServices";
 
 export default function ServicesVps(){
@@ -6,7 +7,7 @@ export default function ServicesVps(){
         {
           id: "2",
           src: "../img/VPS.png",
-          title: "VPS Hosting",
+          title: "Meeting",
           description:"Virtual Private Servers with ultra-fast SSDs and flexibility with HTTP/2, Ubuntu, IPv6, Nginx, Node.js and more.",
           price: "Starting at: $10.00/mo",
         },
@@ -23,8 +24,10 @@ export default function ServicesVps(){
     })
 
     return(
-        <div className="ServicesVpsHaneen">
-            {ServicesVps}
-        </div>
+      <Link to="#">
+      <div className="ServicesVpsHaneen">
+      {ServicesVps}
+      </div>
+      </Link>
     )
 }
