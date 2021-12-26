@@ -13,6 +13,7 @@ import Aboutus from './Page/Aboutus';
 import Hosting from './Components/Hosting/Hosting';
 import Calender from './Components/Calender/Calender';
 import OurCourse from './Page/OurCourse'
+import ErrorPage from './Components/404/404';
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
     {/* <Route path="/Calender" element={<Calender /> } /> */}
     <Route path='/OurCourse' element={<OurCourse/>}/>
     <Route path='/Checkout' element={<Checkout/>}/>
-
+    <Route path='*' element={<ErrorPage/>}/>
+    
 
     </Routes>
     <Footer />
