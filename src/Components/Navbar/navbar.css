@@ -1,39 +1,40 @@
 nav {
-      background-color: #0050A3;
+      background-color: rgb(255, 255, 255);
+      border-bottom: 1px solid #0456d01f;
       padding: 15px 0 !important;
 }
 
-nav .dropdown-menu {
-      background-color: #0050A3 !important;
-}
 
 nav a.navbar-brand {
-      color: white !important;
+      color: #0457D0 !important;
       font-weight: 700;
+      font-size: 26px;
 }
 nav .nav-item a {
-      color: white !important;
+      color: #0457D0 !important;
       font-weight: 500;
+      font-size: 17px;
 }
 
 nav .nav-item a:hover {
-      color: #087dfa !important;
+      color: #353535 !important;
       transition: all .3s ease;
 }
 
 .loginButton {
       color: white;
-      border: 1px solid #0073EC;
-      background-color: #0073EC;
-      margin-top: 5px;
-      width: 90px;
-      padding: 5px 5px;
+      border: 1px solid #0457D0;
+      background-color: #0457D0;
+      width: 100px;
+      padding: 5px 15px;
       border-radius: 5px;
       margin-left: 10px;
+      margin-top: 2px;
 }
 
 .loginButton:hover {
-      border: 1px solid white;
+      border: 1px solid #0457D0;
       transition: all .5s ease-in-out;
+      background-color: #054bb4;
 
 }

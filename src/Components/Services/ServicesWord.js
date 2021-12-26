@@ -24,27 +24,30 @@ export default function ServicesWord() {
       price: "Starting at: $1.99/mo",
     }
   ];
-  const ServicesWord = ServicesArr.map((element) => {
+  // const ServicesWord = ServicesArr.map((element) => {
     return (
+      <div>
       <HostingServices
-        id={element.id}
-        src={element.src}
-        title={element.title}
-        description={element.description}
-        price={element.price}
+        id={ServicesArr.id}
+        src={ServicesArr.src}
+        title={ServicesArr.title}
+        description={ServicesArr.description}
+        price={ServicesArr.price}
       />
+      </div>
     );
-  });
+  // }
+  // );
 
   // const handleWordPressClick=()=>{
   //  props.handleWordPress();
   // }
 
-  return (
-  // <Link to="/login"> 
-   <div className="ServicesWordHaneen" >
-      {ServicesWord}
-   </div>
-  //  </Link>
-  );
+  // return (
+  // // <Link to="/login"> 
+  //  <div className="ServicesWordHaneen" >
+  //     {ServicesWord}
+  //  </div>
+  // //  </Link>
+  // );
 }

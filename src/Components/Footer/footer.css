@@ -1,13 +1,13 @@
 #footer {
-      background: #071C26;
+      background: #F5F5F5;
       padding: 0 0 30px 0;
-      color: #fff;
+      color: black;
       font-size: 14px
   }
   
   #footer .footer-newsletter {
       padding: 50px 0;
-      background: #071C26;
+      background: #F5F5F5;
   }
   
   #footer .footer-newsletter h4 {
@@ -53,10 +53,11 @@
   }
   
   #footer .footer-top {
-      background: #071C26;
-      border-top: 1px solid #4747474b;
-      border-bottom: 1px solid #4747474b;
-      padding: 60px 0 30px 0
+      background: #F5F5F5;
+      border-top: 1px solid #4747471a;
+      border-bottom: 1px solid #4747471a;
+      padding: 60px 0 30px 0;
+      color: black;
   }
   
   #footer .footer-top .footer-info {
@@ -76,22 +77,21 @@
       line-height: 24px;
       margin-bottom: 0;
       font-family: "Raleway", sans-serif;
-      color: #fff
+      color: black
   }
   
   #footer .footer-top .social-links a {
-      font-size: 18px;
+      font-size: 17px;
       display: inline-block;
       background: #545454;
       color: #fff;
       line-height: 1;
       padding: 8px 0;
-      margin-right: 4px;
       border-radius: 50%;
       text-align: center;
-      width: 36px;
-      height: 36px;
-      transition: 0.3s
+      width: 37px;
+      transition: 0.3s;
+      margin: 2px 2px;
   }
   
   #footer .footer-top .social-links a:hover {
@@ -103,7 +103,7 @@
   #footer .footer-top h4 {
       font-size: 16px;
       font-weight: bold;
-      color: #fff;
+      color: black;
       text-transform: uppercase;
       position: relative;
       padding-bottom: 12px
@@ -137,7 +137,7 @@
   }
   
   #footer .footer-top .footer-links ul a {
-      color: #fff;
+      color: black;
       transition: 0.3s;
       display: inline-block;
       line-height: 1;
