@@ -1,0 +1,19 @@
+.errorPage {
+      padding-top: 70px;
+}
+
+.errorPage h1 {
+      font-weight: 700;
+}
+
+.errorPage img {
+      margin: 35px auto;
+      display: block;
+      width: 500px;
+}
+
+@media (max-width:560px) {
+      .errorPage img {
+            width: 250px;
+      }
+}
