@@ -1,17 +1,22 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Hero.css'
 function Hero() {
     return (
         <div>
             <div>
-                <div className='hero-img'>
-                    <h2 className='content'>We put your success First !!</h2>
-                <button className='btn-hero'>Book now</button>
+                <div className='hero-img' style={{ background: `linear-gradient(190deg, #ffffff , rgba(0, 0, 1, 0)), url('../img/hero/zoom-for-education.jpg')`,backgroundRepeat:'no-repeat',backgroundSize:'cover', backgroundPosition: 'center'  }}>
+                    <div className='content'>
+                    <h1><p>Our Services for Customer Success</p></h1>
+                    <h2 >We put your success First !!</h2></div>
+                    <Link to="/Services"><button className='btn-hero'>Book now</button></Link>
+                    
                 </div>
-                <section className='mid-section'>
-                <h1>Top Features</h1>
 
-                <div className='features-card'>
+                <section className='mid-section'>
+                {/* <h1>Top Features</h1> */}
+
+                {/* <div className='features-card'>
 
                 <div>
                 <i class="far fa-play-circle"></i>
@@ -30,11 +35,7 @@ function Hero() {
                 <h3>Personal Evaluation</h3>
                 <p>keep students with full contact with his teacher</p>
                 </div>
-                
-                </div>
-
-
-
+                </div> */}
 
                 </section>
             </div>
