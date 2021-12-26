@@ -7,8 +7,8 @@ const Checkout = () => {
       const submitHandler = e => {
             e.preventDefault();
             swal({
-                  title: 'Completed Successfully',
-                  text: 'Welcome',
+                  title: 'Completed!',
+                  text: 'Check your profile page',
                   // button: 'OK',
             })
       }
@@ -18,7 +18,7 @@ const Checkout = () => {
             <>
                   <div className="container">
                         <div className="row">
-                              <div className="col-12">
+                              <div className="col-md">
                                     <div className="CheckoutContainer">
                                           <form onSubmit={submitHandler} >
                                                 <div className="flname">
@@ -46,6 +46,11 @@ const Checkout = () => {
                                                
                                                 <button type="submit" >Submit</button>
                                           </form>
+                                    </div>
+                              </div>
+                              <div className="col-md">
+                                    <div className="eduimg">
+                                    <img src="https://res.cloudinary.com/durpirilj/image/upload/v1640541671/undraw_online_learning_re_qw08_wlhg9j.svg" width="500px" alt="EDU Image" />
                                     </div>
                               </div>
                         </div>
