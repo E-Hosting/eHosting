@@ -1,0 +1,109 @@
+.RegisterToqa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3f0ff;
+    /* border: rgb(179, 19, 152) soild 10px; */
+    padding: 70px 0;
+}
+
+.TitleRegisterAndImg img{
+    width: 32em;
+    height: 20em;
+    
+
+
+}
+
+.TitleRegisterAndImg{
+    /* border:  1px red solid; */
+    margin-bottom: 1rem;
+    max-width: 100%;
+    height: auto;
+
+}
+.TitleRegisterAndImg h3{
+    align-items: center;
+    margin-left: 3em;
+    font-family: "Proxima Nova", proxima-nova, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #103760;
+    line-height: 1;
+}
+.TitleRegisterAndImg p{
+    margin-left: 4em;
+    font-size: 1.5rem;
+    color: #434F58 !important;
+    max-width: 20em;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.RegisterForm{
+    /* border:  1px green solid; */
+    /* height: 50%; */
+    width: 35%;
+    background-color: #ffffff;
+    height: 37em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2%;
+}
+.contactRegisterForm{
+    /* border: 1px solid red; */
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+}
+.contactRegisterForm input{
+    display: block;
+    width: 90%;
+    border: 0;
+    background-color: #E3F0FF;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    line-height: 1;
+    transition: box-shadow .22s ease-out;
+    height: 3rem;
+    margin: .8em 0;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.submitRegisterForm{
+    margin: 8px 0;
+    width: 90%;
+    opacity: 0.9;
+    font-family: "Proxima Nova", sans-serif;
+    background-color:  #0073EC;
+    color: white;
+    border: solid 1px #0073EC;
+    border-radius: 3px;
+    padding: 0.75rem 2rem 0.625rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+
+@media(max-width: 1000px){
+    .TitleRegisterAndImg{
+        display: none;
+    }
+
+    .RegisterForm{
+        width: 90%;
+    }
+}

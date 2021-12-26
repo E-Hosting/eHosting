@@ -1,0 +1,74 @@
+.dreamhostContainer {
+  padding: 100px 0 0 0;
+  text-align: center;
+}
+
+.headingHome {
+  display: inline-block !important;
+}
+.headingHome h1 {
+  font-weight: 600;
+  line-height: 60px;
+  text-align: left;
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+
+.headingWhy {
+  font-size: 31px !important;
+  margin: 50px 0 0 0;
+  border-top: 1px solid #0456d015;
+}
+
+.headingHome a {
+  text-transform: capitalize;
+  font-size: 20px;
+  background-color: #0457D0;
+  border: 1px solid #0457D0;
+  padding-bottom: 5px;
+  color: white;
+  padding: 10px 25px;
+  margin: 10px 0 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.headingHome a:hover {
+  border: 1px solid white;
+  transition: all .5s ease-in-out;
+  background-color: #0444a3;
+}
+
+
+.dreamHostAll {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+.dreamHost {
+  width: 21%;
+}
+.dreamHost img {
+  width: 55px;
+  height: 50px;
+  margin: 2em 0;
+}
+.dreamHost p {
+  text-align: unset;
+}
+@media only screen and (max-width: 768px) {
+  .dreamHostAll {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+  .dreamHost {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .dreamHostAll {
+    grid-template-columns: 1fr;
+  }
+}
