@@ -1,16 +1,14 @@
 .HostingAllHaneen{
     display: grid;
     grid-template-columns: 1fr;
-    background-color: white;
-    border: 1px solid #cbcbcb;
-    box-shadow: 0px 0px 3px 2px #ddd;
-    border-radius: 1px;
-    padding: 1.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
+    padding: 25px 20px 100px;
     justify-items: center;
-    min-height: 60vh;
+  border-radius: 2%;
+
 }
 
-.HostingAllHaneen   .HostingAllHaneenInformation{
+.HostingAllHaneen .HostingAllHaneenInformation{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +17,7 @@
 .HostingAllHaneenInformation .HostingAllTitle1Haneen{
     border: 2px solid #4096f1;
     border-radius:25px;
-    margin: 1em 0;
+    margin: 2em 0;
     padding: 0 0.9em;
 }
 
@@ -35,12 +33,13 @@
 }
 
     
-.HostingAllHaneenInformation    .HostingAllTitle2Haneen h4{
+.HostingAllHaneenInformation .HostingAllTitle2Haneen h4{
     font-weight: 700;
 }
 
-@media (max-width:1100px) {
+@media (max-width:1180px) {
     .HostingAllHaneen{
         /* min-height: 70vh; */
+        font-size: .9em;
     }
 }

@@ -6,19 +6,6 @@ function Footer(){
       return(
             <>
       <footer id="footer">
-      <div className="footer-newsletter">
-      <div className="container">
-            <div className="row">
-            <div className="col-lg-6">
-            <h4>Our Newsletter</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quisquam.</p>
-            </div>
-            <div className="col-lg-6">
-            <form action method="post"> <input type="email" name="email" /><input type="submit" defaultValue="Subscribe" /> </form>
-            </div>
-            </div>
-      </div>
-      </div>
       <div className="footer-top">
       <div className="container">
             <div className="row">
@@ -49,7 +36,7 @@ function Footer(){
             <div className="col-lg-3 col-md-6 footer-info">
             <h3>About E Hosting</h3>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-            <div className="social-links mt-3"> <Link to="#" className="twitter"><i className="fab fa-instagram"></i></Link> <Link to="#" className="facebook"><i className="fab fa-facebook"></i></Link> <Link to="#" className="instagram"><i className="fab fa-twitter"></i></Link> <Link to="#" className="linkedin"><i className="fab fa-linkedin"></i></Link> </div>
+            <div className="social-links mt-3"> <Link to="/" className="twitter"><i className="fab fa-instagram"></i></Link> <Link to="/" className="facebook"><i className="fab fa-facebook"></i></Link> <Link to="/" className="instagram"><i className="fab fa-twitter"></i></Link> <Link to="/" className="linkedin"><i className="fab fa-linkedin"></i></Link> </div>
             </div>
             </div>
       </div>

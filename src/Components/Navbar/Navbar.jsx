@@ -6,9 +6,9 @@ import Checkout from "../Checkout/Checkout";
 function Navbar() {
       return(
             <>
-      <nav className="navbar navbar-expand-lg navbar-light fixed">
+      <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container-fluid">
-      <a className="navbar-brand" href="#">EDU</a>
+            <Link to="/" className="navbar-brand">EDU</Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
       </button>
@@ -24,7 +24,7 @@ function Navbar() {
             <Link className="nav-link" to="/Aboutus">About us</Link>
             </li>
             <li className="nav-item">
-            <Link className="nav-link" to="/profile">Profile</Link>
+            <Link className="nav-link" to="/Profile">Profile</Link>
             </li>
 
             <Link to="/login"><button className="loginButton">Login</button></Link>

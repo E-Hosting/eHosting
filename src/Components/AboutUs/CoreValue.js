@@ -1,5 +1,5 @@
 import React from "react";
-import "./digital.css";
+import "../AboutUs/digital.css";
 function CoreValue() {
   return (
     <div>

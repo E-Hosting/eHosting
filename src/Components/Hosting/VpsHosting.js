@@ -5,35 +5,15 @@ import '../Hosting/VpsHosting.css'
 export default function VpsHosting(props){
     const HostingVpsArr=[
         {
-            id:'5',
-            src :'../img/vps2.png',
-            title1:'VPS Business',
-            title2:'Built for Small Business',
-            description:'',
-            price: '$20.00/mo',
-            Saveup:'',
-            type:'vps'
-        },
-         {
-            id:'6',
-            src :'../img/vps1.png',
-            title1:'VPS Basic',
-            title2:'For new & small websites',
-            description:'',
-            price: '$10.00/mo',
-            Saveup:'',
-            type:'vps'
-        },
-        {
-            id:'7',
-            src :'../img/VPS.png',
-            title1:'VPS Professional',
-            title2:'For resource intensive sites',
-            description:'',
-            price: '$40.00/mo',
-            Saveup:'',
-            type:'vps'
-        },  
+            id:'2',
+            src :'../img/word3.png',
+            title1:'POWER MANY SITES',
+            title2:'VPS for WordPress',
+            description:'The ideal way to support 5 WordPress websites. A high-performance platform with isolated resources and more backend control.',
+            price: '$27.50/mo',
+            Saveup:'Save up to 8% with an Annual Plan',
+            type:'wordpress'
+        }, 
     ]
     // const HostingArr=localStorage.getItem('HostingArr')
     // console.log(HostingArr)

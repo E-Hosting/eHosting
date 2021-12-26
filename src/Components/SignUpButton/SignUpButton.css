@@ -1,0 +1,9 @@
+.SignUpDiv .SignUpButton {
+    background-color: #0073EC;
+    color: white;
+    border: 1px solid #0073EC;
+    padding: 0.5em 2em;
+    border-radius: 3px;
+    opacity: 0.9;
+    cursor: pointer;
+}

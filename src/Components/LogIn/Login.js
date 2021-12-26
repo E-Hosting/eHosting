@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
 import './login.css';
-import { Link } from 'react-router-dom';
-export default function Login() {
+import { Link,useNavigate } from 'react-router-dom';
+
+export default function NewPath(){
+    const navigate=useNavigate();
+    const handelUseNavigate=()=>{
+ localStorage.getItem("timeOfCourse")? navigate('/OurCourse'):navigate("/")
+       
+       
+    }
+    return <Login handelUseNavigate={handelUseNavigate}/>
+}
+
+ function Login(props) {
     const [email,setEmail]=useState();
     const [password,setPassword]=useState();
     const [errorMessage ,useerrorMessage]=useState();
-    
-
 
     const submit =(e)=> {
         e.preventDefault();
@@ -19,10 +28,11 @@ export default function Login() {
                 console.log('login TTTTTTT ')
                 localStorage.setItem('uerLogin',JSON.stringify(emailLocalstorge))
                 alert("successful login")
+                props.handelUseNavigate();
                 break;
+              
             }else {
-                alert('The username or password incorrect !!')
-                // seterrorMessage()
+                useerrorMessage('The Email  or password incorrect !!')
             }
         }
 
@@ -33,7 +43,7 @@ export default function Login() {
 
         <div className="TitleLogInAndImg">
         <h3>Own Your Digital Presence</h3>
-        <img src="../img/LogInRegestrationimg.png" />
+        <img src="../img/LogInRegestrationimg.png" alt="Login picture" />
         <p>Grow your website faster by using
         DreamHost as your foundation.</p>
         </div>
@@ -41,7 +51,7 @@ export default function Login() {
         <div className="LogInForm">
         <form className='contactLogInForm'>
 
-        <h3>LogIn Form</h3>
+        <h3>Sign in</h3>
         <input type='email' value={email} onChange={(e)=>{setEmail(e.target.value)}}  placeholder='Email'/>
         <input type='password' value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password'/>
         <small>{errorMessage} </small> 

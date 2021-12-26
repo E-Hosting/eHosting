@@ -4,6 +4,7 @@ import ServicesWebsite from "./ServicesWebsite";
 import ServicesWord from "./ServicesWord";
 import './Services.css'
 
+// <ServicesWord/>
 export default function Services(){
     return(
         <div className="ServicesArr">
@@ -17,7 +18,6 @@ export default function Services(){
     </div>
 
     <div className="ServicesArrHosting">
-       <ServicesWord/>
        <ServicesWebsite/>
        <ServicesVps/>
     </div>
