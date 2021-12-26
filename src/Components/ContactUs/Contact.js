@@ -5,7 +5,6 @@ function Contact() {
     
     return (
         <div>
-            <Navbar/>
          <div className='container-img'> 
          <form className='form-container'>  
             <div className='input-style'>

@@ -1,5 +1,10 @@
 .profile-head {
-    transform: translateY(5rem)
+    padding-top: 25px;
+}
+
+ .row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
 
 .cover {

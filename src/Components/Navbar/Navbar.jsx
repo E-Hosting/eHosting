@@ -18,7 +18,7 @@ function Navbar() {
             <Link className="nav-link active" aria-current="page" to="/" >Home</Link>
             </li>
             <li className="nav-item">
-            <Link className="nav-link" to="/Services">Services</Link>
+            <Link className="nav-link" to="/programs">Programs & Courses </Link>
             </li>
             <li className="nav-item">
             <Link className="nav-link" to="/Aboutus">About us</Link>
