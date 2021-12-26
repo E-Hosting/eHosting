@@ -28,7 +28,7 @@ export default function OurCourse(props){
         <div className="OurCourseMain">
         
         <div className="OurCourseTitle">
-         <h1>OurCourse</h1>
+         <h1>Our Course</h1>
          </div>
 
          <div className="OurCourseServiceMain">

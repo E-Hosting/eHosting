@@ -43,9 +43,9 @@
   /* border:  1px green solid; */
   /* height: 50%; */
   width: 35%;
+  padding: 70px 0;
   background-color: #ffffff;
-  height: 37em;
-  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
   justify-content: center;
   display: flex;
   align-items: center;
@@ -71,7 +71,7 @@
   line-height: 1;
   transition: box-shadow 0.22s ease-out;
   height: 3rem;
-  margin: 1.3em 0;
+  margin: .8em 0;
   /* display: flex;
     justify-content: space-between;
     align-items: center; */
