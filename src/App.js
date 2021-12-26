@@ -15,6 +15,8 @@ import Calender from './Components/Calender/Calender';
 import OurCourse from './Page/OurCourse'
 import Meeting from './Components/Meeting/Meeting'
 import Contact from './Components/ContactUs/Contact'
+import ProfilePage from "./Page/profilePage.jsx"
+
 function App() {
   return (
   
@@ -29,11 +31,10 @@ function App() {
     <Route path="/Services" element={<Services />}/>
     <Route path="/Aboutus" element={<Aboutus />}/>
     <Route path="/Hosting" element={<Hosting/> }/>
-    <Route path="/Meeting" element={<Meeting/>}/>
-    {/* <Route path="/Calender" element={<Calender /> } /> */}
     <Route path='/OurCourse' element={<OurCourse/>}/>
     <Route path='/Checkout' element={<Checkout/>}/>
-    <Route path='/Contactus' element={<Contact/>}/>
+    <Route path='/Profile' element={<ProfilePage/>}/>
+
 
     </Routes>
     <Footer />

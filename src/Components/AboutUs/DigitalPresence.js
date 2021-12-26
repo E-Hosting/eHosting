@@ -9,42 +9,42 @@ function DigitalPresence() {
       img: "../img/aboutus1.svg",
       title: "Our vision and mission",
       descriptions:
-        "We believe in a world where people have the freedom to choose how their digital content is shared, and we foster their success by providing an open web platform of choice.",
+        "Keep everyone focused and engaged with high quality, real-time audio and video, and a suite of collaborative tools.",
     },
     {
       id: "2",
       img: "../img/aboutus2.svg",
       title: "Open source is in our DNA",
       descriptions:
-        "We support WordPress, a powerful open source content management system for the web. We help to make WordPress better with code, community contributions, and expert-level support.",
+        "Increase social learning and knowledge sharing with our powerful communication platform. ",
     },
     {
       id: "3",
       img: "../img/aboutus3.svg",
       title: "Real support 24/7/365",
       descriptions:
-        "Our award-winning in-house support staff is available to you all day, every day, via live chat, email, and social media.",
+        "Our award-winning in-house support staff is available to you all day, every day, via email, and social media.",
     },
     {
       id: "4",
       img: "../img/aboutus4.svg",
-      title: "Over 400k+ happy customers",
+      title: "Our happy student",
       descriptions:
-        " Since the dorm room back in 1997, our customer count has grown to over 400,000, spanning throughout more than 100 countries. That's nuts, right?Since the dorm room back in 1997, our customer count has grown to over 400,000, spanning throughout more than 100 countries. That's nuts, right?",
+        " Every student is different, so we offer not just numerical, verbal and behavioral assessment tools, but skill-based assessment tools as well. ",
     },
     {
       id: "5",
       img: "../img/aboutus5.svg",
-      title: "1.5 million + websites",
+      title: "A Global Curricula",
       descriptions:
-        "DreamHost proudly hosts over 1.5 million websites, WordPress blogs, and applications for designers, developers, small businesses, and more.",
+        "A truly global platform, Education supports national and international curricula, such as IB, IGCSE and AP.",
     },
     {
       id: "6",
       img: "../img/aboutus6.svg",
-      title: "750k+ WordPress installations",
+      title: "Quizzes & Online Exams",
       descriptions:
-        "We’ve been hosting WordPress websites and blogs since the beginning. Our friendly in-house WordPress experts are here to help you do amazing things!",
+        "Education provides everything you need to create high-quality quizzes and easy analysis tools for quiz scoring.",
     },
   ];
   return (
@@ -53,18 +53,19 @@ function DigitalPresence() {
       <section className="section-steps">
         <div className="section-about-header">
           <h2 className="text-center">
-            We help people own their digital presence.
+            We help people meet the new Education.
           </h2>
           <p className="text-center">
-            It's not just wishful thinking. It's our <em>noble cause</em> — an
-            idea that drives everything we do.
+            Education joins all your - <em>learning needs </em>-into one
+            advanced platform giving your students, teachers and parents the
+            right tools for a simpler and more connected learning experience.
           </p>
           <p className="text-center">
-            When you put your dreams online—your words, your photos, your
-            creations—you shouldn't have to worry about your service provider
-            mining that data for marketing purposes. Those are your dreams — not
-            ours! DreamHost's open platform gives you the power to share your
-            data and the freedom to control how it's used.
+            Learning trends change constantly and you need a system that can
+            help you stay up-to-date with the latest global trends. Education’s
+            platform is dynamic and constantly innovating helping you create
+            ways to bridge the gap between getting left behind or staying on
+            trend
           </p>
         </div>
         <div className="digital-container">
