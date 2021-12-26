@@ -13,6 +13,7 @@ import Aboutus from './Page/Aboutus';
 import Hosting from './Components/Hosting/Hosting';
 import Calender from './Components/Calender/Calender';
 import OurCourse from './Page/OurCourse'
+import ProfilePage from "./Page/profilePage.jsx"
 
 function App() {
   return (
@@ -27,9 +28,9 @@ function App() {
     <Route path="/Services" element={<Services />}/>
     <Route path="/Aboutus" element={<Aboutus />}/>
     <Route path="/Hosting" element={<Hosting/> }/>
-    {/* <Route path="/Calender" element={<Calender /> } /> */}
     <Route path='/OurCourse' element={<OurCourse/>}/>
     <Route path='/Checkout' element={<Checkout/>}/>
+    <Route path='/Profile' element={<ProfilePage/>}/>
 
 
     </Routes>
