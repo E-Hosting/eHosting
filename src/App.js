@@ -14,7 +14,7 @@ import Hosting from './Components/Hosting/Hosting';
 import Calender from './Components/Calender/Calender';
 import OurCourse from './Page/OurCourse'
 import ProfilePage from "./Page/profilePage.jsx"
-
+import Contact from "./Components/ContactUs/Contact"
 function App() {
   return (
   
@@ -31,6 +31,7 @@ function App() {
     <Route path='/OurCourse' element={<OurCourse/>}/>
     <Route path='/Checkout' element={<Checkout/>}/>
     <Route path='/Profile' element={<ProfilePage/>}/>
+    <Route path='/Contact' element={<Contact/>}/>
 
 
     </Routes>
