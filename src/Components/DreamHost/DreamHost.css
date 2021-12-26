@@ -1,15 +1,18 @@
 .dreamhostContainer {
-  padding: 100px 0 0 0;
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  align-content: space-around;
 }
 
 .headingHome {
   display: inline-block !important;
+  padding-bottom: 70px;
 }
 .headingHome h1 {
+  padding-top: 35px;
   font-weight: 600;
   line-height: 60px;
-  text-align: left;
   font-size: 50px;
   padding-bottom: 25px;
 }

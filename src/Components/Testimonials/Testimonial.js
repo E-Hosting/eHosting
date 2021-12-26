@@ -1,109 +1,50 @@
 import React from "react";
+import ContactSection3 from "../HomePageSections/ContactSection3/contactSection3";
+import Section2 from "../HomePageSections/Section2/Section2";
 import "./Testimonial.css";
 
 function Testimonial() {
   return (
-    <div className="d-flex align-items-center py-5 mh-100 customTestimonial"> <a className="carousel-control-prev text-decoration-none " href="#mycarousel" role="button" data-bs-slide="prev">
-      <div className="d-flex flex-column justify-content-center me-2 ms-auto left"><span className="fas fa-arrow-left" /> </div> <span className="sr-only">Previous</span>
-    </a>
-      <div className="container">
-        <div id="mycarousel" className="carousel slide" data-bs-ride="carousel">
-          <ol className="carousel-indicators">
-            <li data-bs-target="#mycarousel" data-bs-slide-to={0} className="active" />
-            <li data-bs-target="#mycarousel" data-bs-slide-to={1} />
-            <li data-bs-target="#mycarousel" data-bs-slide-to={2} />
-            <li data-bs-target="#mycarousel" data-bs-slide-to={3} />
-            <li data-bs-target="#mycarousel" data-bs-slide-to={4} />
-            {/* <li data-bs-target="#mycarousel" data-bs-slide-to={4} /> */}
-          </ol>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <div className="row">
-                <div className="col-lg-6 "> <img src='img/imgTestmonial/test1.jpg' className="d-block w-100" alt="..." /> </div>
-                <div className="col-lg-6 ">
-                  <div className=" d-flex flex-column justify-content-center my-5 px-3">
-                    <p className="review text-center">"Incredible services and amazing customer support"</p>
-                    <div className="name d-flex align-items-center justify-content-center"> 
-                    <img src='img/imgTestmonial/test11.jpg' alt='...'/>
-                    <span className="fas fa-minus pe-1" />
-                      <p className="m-0">Rania</p>
-                    </div>
+    <div class="testimonials text-center">
 
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <div className="carousel-item">
-              <div className="row">
-                <div className="col-lg-6 "> <img src='img/imgTestmonial/test2.jpg' className="d-block w-100" alt="..." /> </div>
-                <div className="col-lg-6 ">
-                  <div className=" d-flex flex-column justify-content-center my-5 px-3">
-                    <p className="review text-center">"Incredible services and amazing customer support"</p>
-                    <div className="name d-flex align-items-center justify-content-center">
-                    <img src='img/imgTestmonial/test22.jpg' alt='...'/>
-                       <span className="fas fa-minus pe-1" />
-                      <p className="m-0">Haneen</p>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="row">
-                <div className="col-lg-6 "> <img src='img/imgTestmonial/test3.jpg' className="d-block w-100" alt="..." /> </div>
-                <div className="col-lg-6 ">
-                  <div className=" d-flex flex-column justify-content-center my-5 px-3">
-                    <p className="review text-center">"Incredible services and amazing customer support"</p>
-                    <div className="name d-flex align-items-center justify-content-center">
-                    <img src='img/imgTestmonial/test33.jpg' alt='...'/>
-                       <span className="fas fa-minus pe-1" />
-                      <p className="m-0">Azmi</p>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="row">
-                <div className="col-lg-6 "> <img src='img/imgTestmonial/test4.jpg' className="d-block w-100" alt="..." /> </div>
-                <div className="col-lg-6 ">
-                  <div className=" d-flex flex-column justify-content-center my-5 px-3">
-                    <p className="review text-center">"Incredible services and amazing customer support"</p>
-                    <div className="name d-flex align-items-center justify-content-center">
-                    <img src='img/imgTestmonial/test44.jpg' alt='...'/>
-                       <span className="fas fa-minus pe-1" />
-                      <p className="m-0">Ahmad Ryahnah</p>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="row">
-                <div className="col-lg-6 "> <img src='img/imgTestmonial/test4.jpg' className="d-block w-100" alt="..." /> </div>
-                <div className="col-lg-6 ">
-                  <div className=" d-flex flex-column justify-content-center my-5 px-3">
-                    <p className="review text-center">"Incredible services and amazing customer support"</p>
-                    <div className="name d-flex align-items-center justify-content-center">
-                    <img src='img/imgTestmonial/test44.jpg' alt='...'/>
-                       <span className="fas fa-minus pe-1" />
-                      <p className="m-0">Fatima</p>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
+    <div class="container">
+      <h3>Testimonials</h3>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-light bg-light text-center">
+            <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+            <div class="card-body blockquote">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum enim eu nibh finibus</p>
+              <footer class="blockquote-footer"><cite title="Source Title">Azmi Tammam</cite></footer>
             </div>
           </div>
         </div>
-      </div> <a className="carousel-control-next text-decoration-none " href="#mycarousel" role="button" data-bs-slide="next">
-        <div className="d-flex flex-column justify-content-center right ms-2 me-auto"> <span className="fas fa-arrow-right" /> </div> <span className="sr-only">Next</span>
-      </a>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-light bg-light text-center">
+            <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+            <div class="card-body blockquote">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum enim eu nibh finibus</p>
+              <footer class="blockquote-footer"><cite title="Source Title">Rania</cite></footer>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-light bg-light text-center">
+            <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+            <div class="card-body blockquote">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum enim eu nibh finibus</p>
+              <footer class="blockquote-footer"><cite title="Source Title">Haneen</cite></footer>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
+    <Section2 />
+    <ContactSection3 />
+  </div>
 
 
   );
