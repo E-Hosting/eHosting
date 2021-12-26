@@ -1,4 +1,6 @@
 import React from "react";
+import ContactSection3 from "../HomePageSections/ContactSection3/contactSection3";
+import Section2 from "../HomePageSections/Section2/Section2";
 import "./Testimonial.css";
 
 function Testimonial() {
@@ -40,7 +42,8 @@ function Testimonial() {
 
       </div>
     </div>
-
+    <Section2 />
+    <ContactSection3 />
   </div>
 
 
