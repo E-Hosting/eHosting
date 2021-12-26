@@ -25,7 +25,7 @@ function Calender(props) {
   //   let minutes = today.getMinutes();
   //   + "T" + hour + ":" + minutes;
   let minDateValue = year + "-" + month + "-" + day;
-
+  let bookCourse = JSON.parse(localStorage.getItem('TitleCourse'))
   const [enteredDateFirst, setEnteredDateFirst] = useState({
     enteredDateFirst: minDateValue,
   });
@@ -34,6 +34,7 @@ function Calender(props) {
     startDate: "",
     endDate: "",
     time: "",
+    titlecorse:bookCourse.title1,
     id: 0,
   });
   const fullTimeSlots = [
@@ -117,8 +118,10 @@ function Calender(props) {
 
     // get the latest ID from the local storage saved data, if exists
     let latestId = ourArray.length > 0 ? ourArray[ourArray.length - 1].id : 0;
+// ****************
 
-    setForm({ ...form, id: ++latestId });
+// *****************
+    setForm({ ...form, id: ++latestId, titlecorse:bookCourse.title1 });
     console.log(latestId);
     form.id = latestId;
     ourArray.push(form);

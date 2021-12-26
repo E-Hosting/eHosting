@@ -15,7 +15,7 @@ const Profile = () => {
     let bookingstable = null;
     if (localStorage.getItem('timeOfCourse') && localStorage.getItem('TitleCourse')) {
         let bookings = JSON.parse(localStorage.getItem('timeOfCourse'));
-        let bookCourse = JSON.parse(localStorage.getItem('TitleCourse'))
+        // let bookCourse = JSON.parse(localStorage.getItem('TitleCourse'))
         bookingstable = (
             <div>
                 {bookings.map((booking, id) => {
@@ -37,7 +37,7 @@ const Profile = () => {
                                     {/*fetch trip's data from (services Data)
                                               Bookings : array of objects*/}
                                     <tr>
-                                        <td>{bookings[id].title}</td>
+                                        <td>{bookings[id].titlecorse}</td>
                                         <td>{bookings[id].startDate}</td>
                                         <td>{bookings[id].endDate}</td>
                                         <td>{bookings[id].time}</td>
