@@ -43,3 +43,22 @@
       background-color: #236cd8;
       transition: all .5s ease-in-out;
 }
+
+.eduimg img {
+  padding-top: 80px;
+}
+
+@media (max-width: 555px) {
+  .eduimg img {
+    width: 450px;
+  }
+  .CheckoutContainer form input{
+    max-width: 230px !important;
+  }
+  .CheckoutContainer form button {
+    max-width: 230px;
+  }
+  .CheckoutContainer hr {
+    max-width: 230px;
+  }
+}
