@@ -24,7 +24,7 @@ function Navbar() {
             <Link className="nav-link" to="/Aboutus">About us</Link>
             </li>
             <li className="nav-item">
-            <Link className="nav-link" to="/profile">Profile</Link>
+            <Link className="nav-link" to="/ProfilePage">Profile</Link>
             </li>
 
             <Link to="/login"><button className="loginButton">Login</button></Link>
