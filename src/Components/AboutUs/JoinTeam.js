@@ -1,21 +1,23 @@
 import React from "react";
 import CoreValue from "./CoreValue";
 import "./digital.css";
+import { Link } from "react-router-dom";
 function JoinTeam() {
   return (
     <div>
       <section className="section-aboutus-joining">
         <div className="section-about-header">
           <h2 className="text-center">
-            Interested in joining the DreamHost family? We're hiring.
+            The only learning management system you need
           </h2>
           <p className="text-center">
-            We've been around for 25 years, which is like 80 years in internet
-            years. We proudly host over 1.5 million websites, WordPress blogs,
-            and apps. We're always looking for smart and creative people to join
-            the team.
+            With extensive experience and continuous innovation in learning
+            management technologies, we know you are unique!
           </p>
-          <button>Join our Team</button>
+          <Link to="/Register">
+            {" "}
+            <button>Join us now </button>{" "}
+          </Link>
         </div>
       </section>
     </div>

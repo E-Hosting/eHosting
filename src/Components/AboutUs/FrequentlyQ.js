@@ -6,12 +6,12 @@ function FrequentlyQ() {
     <div className="question-container">
       <h2 className="questionTitle"> Frequently Asked Questions</h2>
       <div className="onequestion">
-        <div className="question-itself">
+        <div className="sub-title collapse">
           <p>
             <i class="fas fa-plus"></i> Why should I choose Education?
           </p>
         </div>
-        <div className="question-answer">
+        <div className="collapse-content collapsed">
           <p>
             Managing the learning process design and development is an integral
             part of your success, especially if you have a large audience and a
@@ -23,13 +23,13 @@ function FrequentlyQ() {
         </div>
       </div>
       <div className="onequestion">
-        <div className="question-itself">
+        <div className="sub-title collapse">
           <p>
             {" "}
             <i class="fas fa-plus"></i> What do I need to run Education?
           </p>
         </div>
-        <div className="question-answer">
+        <div className="collapse-content collapsed">
           <p>
             All you will need to use Education is a device capable of browsing
             the internet. Computer workstations, laptops, tablets and mobile
@@ -38,13 +38,13 @@ function FrequentlyQ() {
         </div>
       </div>
       <div className="onequestion">
-        <div className="question-itself">
+        <div className="sub-title collapse">
           <p>
             <i class="fas fa-plus"></i> Does Education contain a business
             intelligence module? available?
           </p>
         </div>
-        <div className="question-answer">
+        <div className="collapse-content collapsed">
           <p>
             Education’s Standard package offers an array of standard reports
             while the Premium package includes the entire Business Intelligence
@@ -53,13 +53,13 @@ function FrequentlyQ() {
         </div>
       </div>
       <div className="onequestion">
-        <div className="question-itself">
+        <div className="sub-title collapse">
           <p>
             <i class="fas fa-plus"></i> Which mobile OS platforms does Education
             support?
           </p>
         </div>
-        <div className="question-answer">
+        <div className="collapse-content collapsed">
           <p>Education support iOS and Android mobile operating systems.</p>
         </div>
       </div>
