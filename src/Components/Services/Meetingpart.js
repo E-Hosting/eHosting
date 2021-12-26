@@ -24,8 +24,8 @@ export default function ServicesVps(){
     })
 
     return(
-      <Link to="#">
-      <div className="ServicesVpsHaneen">
+      <Link to="/Meeting">
+      <div className="meeting-section">
       {ServicesVps}
       </div>
       </Link>

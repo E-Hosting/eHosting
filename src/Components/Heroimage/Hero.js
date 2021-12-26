@@ -7,7 +7,7 @@ function Hero() {
             <div>
                 <div className='hero-img' style={{ background: `linear-gradient(190deg, #ffffff , rgba(0, 0, 1, 0)), url('../img/hero/zoom-for-education.jpg')`,backgroundRepeat:'no-repeat',backgroundSize:'cover', backgroundPosition: 'center'  }}>
                     <div className='content'>
-                    <h1><p>Our Services for Customer Success</p></h1>
+                    <h1><b>Our Services for Customer Success</b></h1>
                     <h2 >We put your success First !!</h2></div>
                     <Link to="/Services"><button className='btn-hero'>Book now</button></Link>
                     
@@ -17,7 +17,6 @@ function Hero() {
                 {/* <h1>Top Features</h1> */}
 
                 {/* <div className='features-card'>
-
                 <div>
                 <i class="far fa-play-circle"></i>
                 <h3>Virtual Classrooms</h3>
