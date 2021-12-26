@@ -34,7 +34,7 @@ function Footer(){
             <p> A108 Adam Street <br /> New York, NY 535022<br /> United States <br /><br /> <strong>Phone:</strong> +1 5589 55488 55<br /> <strong>Email:</strong> info@example.com<br /> </p>
             </div>
             <div className="col-lg-3 col-md-6 footer-info">
-            <h3>About E Hosting</h3>
+            <h3>About EDU</h3>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
             <div className="social-links mt-3"> <Link to="/" className="twitter"><i className="fab fa-instagram"></i></Link> <Link to="/" className="facebook"><i className="fab fa-facebook"></i></Link> <Link to="/" className="instagram"><i className="fab fa-twitter"></i></Link> <Link to="/" className="linkedin"><i className="fab fa-linkedin"></i></Link> </div>
             </div>
