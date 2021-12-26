@@ -25,8 +25,7 @@ export default function SignUpButton(props) {
     <div className="SignUpDiv">
         <Link to ="/OurCourse" >
         <button className="SignUpButton" onClick={handelClickSignUp}>
-        {" "}
-        Sign Up Now
+        Book Now
         </button>
         </Link>
     </div>

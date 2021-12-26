@@ -1,13 +1,7 @@
 .HostingHaneen{
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: white;
-    border: 1px solid #4096f1;
-    box-shadow: 0px 0px 3px 2px #4096f1;
-    border-radius: 1px;
-    padding: 1.5em;
-    justify-items: center;
-    min-height: 60vh;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    padding-bottom: 35px;
 }
 
 .HostingHaneenInformation{
@@ -16,13 +10,31 @@
     align-items: center;
 }
 
+.HostingHaneenImg img {
+    width: 580px;
+    max-height: 146px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border-bottom: 1px solid #ebebeb;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
 .HostingHaneenInformation .HostingTitleHaneen h4{
   margin-bottom: 1em;
+  color: black;
+}
+
+.HostingHaneenImg img:hover, .HostingHaneenInformation .HostingPriceHaneen p:hover, .HostingHaneenInformation .HostingTitleHaneen h4:hover {
+    color: #0357D2;
 }
 
 .HostingHaneenInformation .HostingPriceHaneen p{
-    font-weight: 700;
-    margin-top: 1em;
+    font-weight: 600;
+    color: black;
+}
+.HostingDescriptionHaneen {
+    color: black;
 }
 
 @media (max-width:1100px) {
