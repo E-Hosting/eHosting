@@ -6,9 +6,9 @@ export default function ServicesWebsite(){
     const ServicesArr = [
         {
           id: "1",
-          src: "../img/Website.png",
+          src: "https://cdn.schoolstream.com.au/wp-content/uploads/2019/08/Campaign_-Blog-headers-2.png",
           title: "Courses",
-          description: "Shared Website Hosting gives you a free domain name, fast SSD storage and email hosting for your website",
+          description: "Courses You Can Complete in a Day",
           price: "Starting at: $1.99/mo",
         },
     ]  
@@ -24,7 +24,7 @@ export default function ServicesWebsite(){
         
     })
     return(
-        <Link to="/Hosting">
+        <Link to="/courses">
         <div className="ServicesWebsiteHaneen" >
         {ServicesWebsite}
         

@@ -12,21 +12,21 @@ function Footer(){
             <div className="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Home</Link></li>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">About us</Link></li>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Services</Link></li>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Terms of service</Link></li>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Privacy policy</Link></li>
+                  <li><Link to="#">Home</Link></li>
+                  <li><Link to="#">About us</Link></li>
+                  <li><Link to="#">Services</Link></li>
+                  <li><Link to="#">Terms of service</Link></li>
+                  <li><Link to="#">Privacy policy</Link></li>
             </ul>
             </div>
             <div className="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Web Design</Link></li>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Web Development</Link></li>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Product Management</Link></li>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Marketing</Link></li>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Graphic Design</Link></li>
+                  <li><Link to="#">Web Design</Link></li>
+                  <li><Link to="#">Web Development</Link></li>
+                  <li><Link to="#">Product Management</Link></li>
+                  <li><Link to="#">Marketing</Link></li>
+                  <li><Link to="#">Graphic Design</Link></li>
             </ul>
             </div>
             <div className="col-lg-3 col-md-6 footer-contact">
@@ -42,7 +42,7 @@ function Footer(){
       </div>
       </div>
       <div className="container">
-      <div className="copyright"> © Copyright <strong><span>E Hosting</span></strong>. All Rights Reserved </div>
+      <div className="copyright"> © Copyright <strong><span>EDU</span></strong>. All Rights Reserved </div>
       </div>
       </footer>
 

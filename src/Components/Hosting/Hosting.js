@@ -1,41 +1,42 @@
 import React from "react";
 import HostingAll from "./HostingAll";
-import WordPressHosting from "./WordPressHosting";
-import '../Hosting/Hosting.css'
-import CourseDateils from "../../Page/CourseDateils";
-
-export default function Hosting(){
-   const HostingArr=[
-       {
-           id:'0',
-           src :'../img/word1.png',
-           title1:'WORDPRESS FOR NEW SITES',
-           title2:'WordPress Basic',
-           description:'The most affordable way to get all the basics for your WordPress website — perfect if you’re new to WordPress.',
-           price: '$1.99/mo',
-           Saveup:'Save up to 68% with a 3-Year Plan',
-           type:'wordpress'
-       },
-         {
-           id:'1',
-           src :'../img/word2.png',
-           title1:'MANAGED WORDPRESS',
-           title2:'DreamPress',
-           description:'Fast, optimized WordPress Hosting with professional staging, daily & on-demand backups, custom caching + email.',
-           price: '$16.95/mo',
-           Saveup:'Save up to 17% with an Annual Plan',
-           type:'wordpress'
-       },
-        {
-           id:'2',
-           src :'../img/word3.png',
-           title1:'POWER MANY SITES',
-           title2:'VPS for WordPress',
-           description:'The ideal way to support 5 WordPress websites. A high-performance platform with isolated resources and more backend control.',
-           price: '$27.50/mo',
-           Saveup:'Save up to 8% with an Annual Plan',
-           type:'wordpress'
-       },
+import "../Hosting/Hosting.css";
+import { Link } from "react-router-dom";
+export default function Hosting() {
+  const HostingArr = [
+    {
+      id: "0",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png",
+      title1: "JavaScript",
+      title2: "WordPress Basic",
+      description:
+        "JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web.",
+      price: "$1.99/mo",
+      Saveup: "Save up to 68% with a 3-Year Plan",
+      type: "wordpress",
+    },
+    {
+      id: "1",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png",
+      title1: "Python",
+      title2: "DreamPress",
+      description:
+        "Python is a popular programming language. Python can be used on a server to create web applications.",
+      price: "$16.95/mo",
+      Saveup: "Save up to 17% with an Annual Plan",
+      type: "wordpress",
+    },
+    {
+      id: "2",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
+      title1: "TypeScript",
+      title2: "VPS for WordPress",
+      description:
+        "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale",
+      price: "$27.50/mo",
+      Saveup: "Save up to 8% with an Annual Plan",
+      type: "wordpress",
+    },
     //     {
     //        id:'3',
     //        src :'../img/Website.png',
@@ -56,7 +57,7 @@ export default function Hosting(){
     //        Saveup:'',
     //        type:'website'
     //    },
-     
+
     //     {
     //        id:'5',
     //        src :'../img/vps2.png',
@@ -86,27 +87,35 @@ export default function Hosting(){
     //        price: '$40.00/mo',
     //        Saveup:'',
     //        type:'vps'
-    //    },  
-   ]
-//    localStorage.setItem('HostingArr',JSON.stringify(HostingArr))
-        localStorage.setItem('HostingArr',JSON.stringify(HostingArr));
+    //    },
+  ];
+  //    localStorage.setItem('HostingArr',JSON.stringify(HostingArr))
+  localStorage.setItem("HostingArr", JSON.stringify(HostingArr));
 
-    const Hosting=HostingArr.map((element)=>{
-      return  <HostingAll id={element.id}
-                    src={element.src}
-                    title1={element.title1}
-                    description={element.description}
-                    price={element.price}/>
-    })
+  const Hosting = HostingArr.map((element) => {
+    return (
+      <HostingAll
+        id={element.id}
+        src={element.src}
+        title1={element.title1}
+        description={element.description}
+        price={element.price}
+      />
+    );
+  });
 
-    return(
-     
-        <div className="HostingCoures">
-     
-             {Hosting}
+  return (
+    <>
+        <ol class="breadcrumb customBreadcrumb">
+        <li class="breadcrumb-item"><Link to="/">Home</Link></li>
+        <li class="breadcrumb-item"> <Link to="/Services">Programs & Courses</Link> </li>
+        <li class="breadcrumb-item active" aria-current="page">Courses</li>
+        </ol>
+          <h1 className="text-center">Courses</h1>
+      <div className="HostingCoures">
+        {Hosting}
         {/* <WordPressHosting  HostingArr={HostingArr}/> */}
-    
-        </div>
-       
-    )
+      </div>
+    </>
+  );
 }

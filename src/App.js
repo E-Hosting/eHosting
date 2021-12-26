@@ -14,7 +14,7 @@ import Hosting from './Components/Hosting/Hosting';
 import Calender from './Components/Calender/Calender';
 import OurCourse from './Page/OurCourse'
 import ProfilePage from "./Page/profilePage.jsx"
-
+import Contact from "./Components/ContactUs/Contact"
 function App() {
   return (
   
@@ -25,12 +25,13 @@ function App() {
     <Route path="/Checkout" element={<Checkout/>}/>
     <Route path="/Login" element={<Login />}/>
     <Route path="/Register" element={<Register />}/>
-    <Route path="/Services" element={<Services />}/>
+    <Route path="/programs" element={<Services />}/>
     <Route path="/Aboutus" element={<Aboutus />}/>
-    <Route path="/Hosting" element={<Hosting/> }/>
+    <Route path="/courses" element={<Hosting/> }/>
     <Route path='/OurCourse' element={<OurCourse/>}/>
     <Route path='/Checkout' element={<Checkout/>}/>
     <Route path='/Profile' element={<ProfilePage/>}/>
+    <Route path='/Contact' element={<Contact/>}/>
 
 
     </Routes>
