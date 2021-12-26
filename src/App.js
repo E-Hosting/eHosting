@@ -25,9 +25,9 @@ function App() {
     <Route path="/Checkout" element={<Checkout/>}/>
     <Route path="/Login" element={<Login />}/>
     <Route path="/Register" element={<Register />}/>
-    <Route path="/Services" element={<Services />}/>
+    <Route path="/programs" element={<Services />}/>
     <Route path="/Aboutus" element={<Aboutus />}/>
-    <Route path="/Hosting" element={<Hosting/> }/>
+    <Route path="/courses" element={<Hosting/> }/>
     <Route path='/OurCourse' element={<OurCourse/>}/>
     <Route path='/Checkout' element={<Checkout/>}/>
     <Route path='/Profile' element={<ProfilePage/>}/>

@@ -17,7 +17,7 @@ const Profile = () => {
         let bookings = JSON.parse(localStorage.getItem('timeOfCourse'));
         // let bookCourse = JSON.parse(localStorage.getItem('TitleCourse'))
         bookingstable = (
-            <div>
+            <div className='customProfile'>
                 {bookings.map((booking, id) => {
                     return (
                         <div className="row">
@@ -64,8 +64,8 @@ const Profile = () => {
                 <div className="col-md-5 mx-auto">
                     {/* Profile widget */}
                     <div className="bg-white shadow rounded overflow-hidden">
-                        <div className="px-4 pt-0 pb-4 cover">
-                            <div className="media align-items-middle  profile-head">
+                        <div className="px-4 pt-0 pb-1 cover">
+                            <div className="media  profile-head">
                                 <div className="profile mr-3"><img src="https://us.123rf.com/450wm/jemastock/jemastock1708/jemastock170810943/84164152-stock-vector-man-avatar-icon-image-vector-illustration-design-black-and-white.jpg?ver=6" alt="..." width={130} className="rounded mb-2 img-thumbnail" />{/* <a href="#" className="btn btn-outline-dark btn-sm btn-block">Edit profile</a> */}</div>
                                 <div className="media-body mb-5 text-white mt-5 "
                                     style={{ textAlign: 'center' }}>
@@ -78,7 +78,7 @@ const Profile = () => {
 
                         </div>
                         <div className="px-4 py-3">
-                            <h5 className="mb-0">User Profile</h5>
+                            <h5 className="mb-4">User Profile</h5>
                             <div className="p-4 rounded shadow-sm bg-light">
                                 <p className="font-italic mb-0">{`Welcome ${loggedUser.userName}`}</p>
                                 <p className="font-italic mb-0">{loggedUser.email}</p>
