@@ -14,7 +14,7 @@ function Footer(){
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quisquam.</p>
             </div>
             <div className="col-lg-6">
-            <form action method="post"> <input type="email" name="email" /><input type="submit" defaultValue="Subscribe" /> </form>
+            <form action method="post"> <input type="email" name="email" placeholder="you@example.com" /><input type="submit" defaultValue="Subscribe" /> </form>
             </div>
             </div>
       </div>

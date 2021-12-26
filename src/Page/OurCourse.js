@@ -7,37 +7,12 @@ import '../Page/OurCourse.css'
 import CourseDateils from "./CourseDateils";
 
 
-export default function NewPath(){
-  const  navigate=useNavigate();
-  const checkLogInUser = localStorage.getItem("uerLogin");
-    const handelUseNavigate=()=>{
-        if (checkLogInUser !== null) 
-        navigate('/Checkout')
-
-        else {
-          navigate('/Login')
-        }
-        
-    }
-    return <OurCourse handelUseNavigate={handelUseNavigate}/>
-}
 
 
- function OurCourse(props){
+
+export default function OurCourse(props){
     
-   const hanelSubmiteButton=()=>{
-    const checkLogInUser = localStorage.getItem("uerLogin");
-    console.log(checkLogInUser);
-    if (checkLogInUser !== null) {
-        console.log("go");
-        props.handelUseNavigate();
-    } else {
-        console.log("no");
-       props.handelUseNavigate();
-
-    }
-
-   }
+ 
 
   
         const TitleCourse=localStorage.getItem("TitleCourse")
@@ -53,7 +28,7 @@ export default function NewPath(){
         <div className="OurCourseMain">
         
         <div className="OurCourseTitle">
-         <h1>OurCourse</h1>
+         <h1>Our Course</h1>
          </div>
 
          <div className="OurCourseServiceMain">
@@ -73,7 +48,6 @@ export default function NewPath(){
 
         </div>
 
-        <button className="SubmiteButton" onClick={hanelSubmiteButton}>Confirm</button>
         </div>
     )
 }
