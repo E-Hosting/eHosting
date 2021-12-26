@@ -41,7 +41,7 @@ export default function Login() {
         <div className="LogInForm">
         <form className='contactLogInForm'>
 
-        <h3>LogIn Form</h3>
+        <h3>Sign in</h3>
         <input type='email' value={email} onChange={(e)=>{setEmail(e.target.value)}}  placeholder='Email'/>
         <input type='password' value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password'/>
         <small>{errorMessage} </small> 

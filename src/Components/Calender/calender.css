@@ -1,11 +1,11 @@
-.calender-controls {
-  min-height: 100vh;
+.render-calender-form {
+  width: 75%;
 }
 
 form.calender-form {
   flex-direction: column;
   display: flex;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 
@@ -70,16 +70,18 @@ form.calender-form {
 }
 
 .render-calender-form {
-  width: 35%;
+  /* width: 35%; */
   background-color: #ffffff;
-  height: 37em;
-  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  /* height: 37em; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
   justify-content: center;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
   border-radius: 2%;
   margin-left: 2em;
+  padding: 2em 0;
 }
 
 .calender-form {
@@ -114,18 +116,29 @@ form.calender-form {
   color: white;
   border: solid 1px #0073ec;
   border-radius: 5px;
+  font-size: 18px;
   padding: 0.75rem 2rem 0.625rem;
-  font-weight: 600;
+  font-weight: 400;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .calender-title {
     display: none;
   }
 
   .render-calender-form {
-    width: 90%;
+    width: 100%;
+    margin: 0  ;
+
   }
+  .CalenderOurCourse{
+    width: 100%;
+  }
+
 }
+
+
+
+
