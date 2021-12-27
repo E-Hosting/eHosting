@@ -12,10 +12,10 @@ function Hero() {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
-          }}>
-          <div className="content">
-
-          </div>
+            minHeight: "90vh",
+          }}
+        >
+          <div className="content"></div>
         </div>
       </div>
     </div>
