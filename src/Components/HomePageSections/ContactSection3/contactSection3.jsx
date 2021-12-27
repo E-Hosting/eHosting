@@ -3,13 +3,15 @@ import swal from 'sweetalert'
 import "./contactSection3.css";
 
 function ContactSection3() {
-  const handelSubmitswtalt =()=>{
+  const handelSubmitswtalt =(e)=>{
+    e.preventDefault();
     swal({
       title: 'Completed!',
       text: 'Thank you for your message, we will contact with you soon.',
       buttons:"ok",
 
 })
+e.target.reset();
   }
   return (
     <>
