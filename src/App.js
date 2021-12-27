@@ -15,6 +15,7 @@ import Calender from './Components/Calender/Calender';
 import OurCourse from './Page/OurCourse'
 import ProfilePage from "./Page/profilePage.jsx"
 import Contact from "./Components/ContactUs/Contact"
+import ErrorPage from './Components/404/404';
 function App() {
   return (
   
@@ -32,7 +33,7 @@ function App() {
     <Route path='/Checkout' element={<Checkout/>}/>
     <Route path='/Profile' element={<ProfilePage/>}/>
     <Route path='/Contact' element={<Contact/>}/>
-
+    <Route path='*' element={<ErrorPage />}/>
 
     </Routes>
     <Footer />

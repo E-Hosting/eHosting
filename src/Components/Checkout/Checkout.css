@@ -50,15 +50,19 @@
 
 @media (max-width: 555px) {
   .eduimg img {
-    width: 450px;
+    width: 95%;
+    display: none;
   }
   .CheckoutContainer form input{
-    max-width: 230px !important;
+    max-width: 280px !important;
   }
   .CheckoutContainer form button {
-    max-width: 230px;
+    max-width: 280px;
   }
   .CheckoutContainer hr {
-    max-width: 230px;
+    max-width: 280px;
+  }
+  .flname input{
+    min-width: 280px !important;
   }
 }

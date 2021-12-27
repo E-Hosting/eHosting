@@ -61,17 +61,31 @@
   text-align: unset;
 }
 @media only screen and (max-width: 768px) {
-  .dreamHostAll {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
+  .headingHome h1 {
+    line-height: 25px;
+    font-size: 20px;
+    padding-bottom: 25px;
   }
   .dreamHost {
     width: 100%;
   }
-}
-@media only screen and (max-width: 450px) {
-  .dreamHostAll {
-    grid-template-columns: 1fr;
+  .headingHome a {
+    text-transform: capitalize;
+    font-size: 14px;
+    background-color: #0457D0;
+    border: 1px solid #0457D0;
+    padding-bottom: 5px;
+    color: white;
+    padding: 8px 20px;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .section1Container {
+    padding-top: 35px !important;
+  }
+  .testimonials {
+    padding-top: 35px;
   }
 }
+

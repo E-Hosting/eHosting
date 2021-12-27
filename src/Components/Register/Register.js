@@ -83,8 +83,7 @@ export default function NewPath(){
         <div className="TitleRegisterAndImg">
         <h3>Own Your Digital Presence</h3>
         <img src="../img/LogInRegestrationimg.png"  alt="Register Picture"/>
-        <p>Grow your website faster by using
-        DreamHost as your foundation.</p>
+        <p>Grow yourself by using our website as your foundation.</p>
         </div>
         
         <div className="RegisterForm">
