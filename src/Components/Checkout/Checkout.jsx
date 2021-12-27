@@ -30,7 +30,7 @@ const Checkout = () => {
                   swal({
                         title: 'Completed!',
                         text: 'Check your profile page',
-                        buttons:"okk",
+                        buttons:"ok",
 
                   })
             } 
