@@ -12,7 +12,6 @@ function Hero() {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            minHeight: "90vh",
           }}
         >
           <div className="content"></div>
