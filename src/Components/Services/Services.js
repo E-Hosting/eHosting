@@ -1,5 +1,5 @@
 import React from "react";
-import ServicesVps from "./ServicesVps";
+import ServicesVps from "./Meetingpart";
 import ServicesWebsite from "./ServicesWebsite";
 import ServicesWord from "./ServicesWord";
 import './Services.css'

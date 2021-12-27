@@ -13,6 +13,8 @@ import Aboutus from './Page/Aboutus';
 import Hosting from './Components/Hosting/Hosting';
 import Calender from './Components/Calender/Calender';
 import OurCourse from './Page/OurCourse'
+import Meeting from './Components/Meeting/Meeting'
+import Contact from './Components/ContactUs/Contact'
 import ProfilePage from "./Page/profilePage.jsx"
 import Contact from "./Components/ContactUs/Contact"
 import ErrorPage from './Components/404/404';
@@ -21,6 +23,7 @@ function App() {
   
     <BrowserRouter>
     <Navbar />
+    {/* <Meeting/> */}
     <Routes>
     <Route path="/" element={<HomePage/>}/>
     <Route path="/Checkout" element={<Checkout/>}/>
