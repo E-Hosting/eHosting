@@ -1,10 +1,8 @@
 import React from "react";
-import ServicesVps from "./ServicesVps";
 import ServicesWebsite from "./ServicesWebsite";
-import ServicesWord from "./ServicesWord";
 import "./Services.css";
 import { Link } from "react-router-dom";
-// <ServicesWord/>
+
 export default function Services() {
   return (
     <>
