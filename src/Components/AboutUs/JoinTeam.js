@@ -14,7 +14,7 @@ function JoinTeam() {
             With extensive experience and continuous innovation in learning
             management technologies, we know you are unique!
           </p>
-          <Link to="/Register">
+          <Link to="/courses">
             {" "}
             <button>Join us now </button>{" "}
           </Link>
