@@ -30,7 +30,7 @@ const Checkout = () => {
                   swal({
                         title: 'Completed!',
                         text: 'Check your profile page',
-                        buttons:"okk",
+                        buttons:"ok",
 
                   })
             } 
@@ -63,11 +63,10 @@ const Checkout = () => {
                                                       <input type="text" id="address" required />
                                                 </div>
                                                 {/* <div classname="paymentCustom">
-                                               <span><input type="checkbox" required /></span> 
+                                                <span><input type="checkbox" required /></span> 
                                                 <span><label>Confirm Payment</label></span>
                                                 </div> */}
                                                 <hr className="my-4" />
-
 
                                                 <button type="submit" >Submit</button>
                                           </form>

@@ -100,4 +100,11 @@
   .LogInForm {
     width: 90%;
   }
+
+}
+
+@media (max-width:350px) {
+  .LoginFormMe{
+    font-size:.9em ;
+  }
 }
