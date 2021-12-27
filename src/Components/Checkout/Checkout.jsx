@@ -1,8 +1,18 @@
 import React, { useState } from "react";
+import {  useNavigate } from 'react-router-dom';
 import swal from 'sweetalert'
 import "./Checkout.css"
+export default function NewPath() {
+      const navigate = useNavigate();
+      const handelUseNavigate = () => {
+         navigate("/")
+  
+  
+      }
+      return <Checkout handelUseNavigate={handelUseNavigate} />
+  }
 
-const Checkout = () => {
+const Checkout = (props) => {
 
       const [email, setEmail] = useState("");
       const [phoneNumber, setPhoneNumber] = useState("");
@@ -33,7 +43,12 @@ const Checkout = () => {
                         buttons:"ok",
 
                   })
+                  setTimeout(()=>{
+                       props.handelUseNavigate();  
+                  },2000)
+                  
             } 
+           
       }
 
 
@@ -83,4 +98,3 @@ const Checkout = () => {
       )
 }
 
-export default Checkout;

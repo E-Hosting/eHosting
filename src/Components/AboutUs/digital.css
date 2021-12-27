@@ -26,10 +26,7 @@ h3.digital-title {
 /* Move Later */
 .digital-container {
   display: grid;
-  grid-template-columns:  auto auto;
-  align-items: start;
-  justify-content: center;
-  justify-items: center;
+  grid-template-columns: auto auto;
   width: 70%;
   gap: 2em;
   margin: auto;

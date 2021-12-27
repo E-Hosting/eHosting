@@ -12,10 +12,9 @@ function Hero() {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
-          }}>
-          <div className="content">
-
-          </div>
+          }}
+        >
+          <div className="content"></div>
         </div>
       </div>
     </div>

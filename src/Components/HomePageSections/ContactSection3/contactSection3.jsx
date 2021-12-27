@@ -1,7 +1,18 @@
 import React from "react";
+import swal from 'sweetalert'
 import "./contactSection3.css";
 
 function ContactSection3() {
+  const handelSubmitswtalt =(e)=>{
+    e.preventDefault();
+    swal({
+      title: 'Completed!',
+      text: 'Thank you for your message, we will contact with you soon.',
+      buttons:"ok",
+
+})
+e.target.reset();
+  }
   return (
     <>
       <div className="contactContainer">
@@ -17,14 +28,14 @@ function ContactSection3() {
             </div>
           </div>
           <div className="col-md">
-                <form>
-                      <input type="text" placeholder="Your name" className="btn" />
+                <form onSubmit={handelSubmitswtalt}>
+                      <input type="text" placeholder="Your name" className="btn" required/>
                       <br />
-                      <input type="email" placeholder="you@example.com" className="btn" />
+                      <input type="email" placeholder="you@example.com" className="btn" required/>
                       <br />
-                      <textarea cols="23" rows="5" className="btn" placeholder="Tell us..."></textarea>
+                      <textarea cols="23" rows="5" className="btn" placeholder="Tell us..." required></textarea>
                       <br />
-                      <button className="btn customFormSend">Send</button>
+                      <button className="btn customFormSend" >Send</button>
                 </form>
           </div>
         </div>
