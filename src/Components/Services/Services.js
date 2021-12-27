@@ -23,7 +23,6 @@ export default function Services(){
       
           <div className="ServicesArrHosting">
              <ServicesWebsite/>
-             <ServicesVps/>
           </div>
             
         </div>
