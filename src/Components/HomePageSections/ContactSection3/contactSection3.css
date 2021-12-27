@@ -35,4 +35,10 @@
       .customContactContainer form {
             margin-top: 55px;
       }
+      .contactHeading img {
+            max-width: 250px;
+      }
+      .customContactContainer form input, .customContactContainer form textarea {
+            width: 250px;
+      }
 }
