@@ -52,7 +52,7 @@ const Profile = () => {
     return (
 
         <div>
-            <div className="row py-5 px-4">
+            <div className="row py-5 px-4 customProfileSize">
                 <div className="col-md-5 mx-auto">
                     {/* Profile widget */}
                     <div className="bg-white shadow rounded overflow-hidden">
