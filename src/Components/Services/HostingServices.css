@@ -39,16 +39,11 @@
   color: black;
 }
 
-@media (max-width: 700px) {
-  .HostingHaneen {
-    max-width: 200px;
-    padding-bottom: 0;
-  }
-  .HostingHaneenImg img {
-    max-width: 198px;
-    height: 100px;
-  }
-  .HostingAllHaneen {
-      padding-bottom: 30px !important;
-  }
+@media (max-width:600px) {
+    .HostingHaneen{
+        /* min-height: 70vh; */
+    }
+    .HostingHaneenImg img{
+        width: 80vw;
+    }
 }
