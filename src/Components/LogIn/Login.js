@@ -65,7 +65,7 @@ function Login(props) {
                     <button onClick={submit} className='submitLoginForm'>Submit</button>
 
                 </form>
-                <p>You dont have already account ?
+                <p className='LoginFormMe'>You dont have already account ?
                     <Link to="/register"> Sign Up</Link>
                 </p>
             </div>
