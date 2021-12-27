@@ -20,13 +20,13 @@ const Checkout = () => {
             } else {
                   setEmailmsg('')
             }
-            if (phoneNumber.length < 10) {
+            if (phoneNumber.length < 10 || phoneNumber.length>10) {
                   setPhoneNumbermsg("Number of Phone must be equal 10 digit")
                   count = count + 1
             } else {
                   setPhoneNumbermsg("")
             }
-            if (phoneNumber.length === 10 || email.includes('@')) {
+            if (phoneNumber.length === 10 && email.includes('@')) {
                   swal({
                         title: 'Completed!',
                         text: 'Check your profile page',
