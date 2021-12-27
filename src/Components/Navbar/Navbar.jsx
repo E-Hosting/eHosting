@@ -19,8 +19,12 @@ function Navbar(props) {
     localStorage.getItem("uerLogin") ;
   const logOut = () => {
     localStorage.removeItem("uerLogin");
+    localStorage.removeItem("TitleCourse");
+    localStorage.removeItem("timeOfCourse"); 
     props.handelUseNavigate();
     console.log("log")
+
+
   };
 
       return(
