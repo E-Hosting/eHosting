@@ -54,15 +54,15 @@
     display: none;
   }
   .CheckoutContainer form input{
-    max-width: 280px !important;
+    max-width: 250px !important;
   }
   .CheckoutContainer form button {
-    max-width: 280px;
+    max-width: 250px;
   }
   .CheckoutContainer hr {
-    max-width: 280px;
+    max-width: 250px;
   }
   .flname input{
-    min-width: 280px !important;
+    min-width: 250px !important;
   }
 }
