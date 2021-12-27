@@ -1,0 +1,57 @@
+.OurCourseMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: space-around;
+    padding: 70px 0;
+}
+
+.OurCourseTitle h1 {
+  padding-bottom: 70px;
+}
+
+.OurCourseMain .OurCourseServiceMain {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 80%;
+  gap: 1em;
+}
+
+.OurCourseMain .SubmiteButton {
+    width: 30%;
+    margin: 2em 0;
+    opacity: 0.9;
+    font-family: "Proxima Nova", sans-serif;
+    background-color: #0073ec;
+    color: white;
+    border: solid 1px #0073ec;
+    border-radius: 5px;
+    padding: 0.75rem 2rem 0.625rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+
+.OurCourseHosting{
+  margin-top: .7em;
+}
+
+@media (max-width :800px ) {
+
+  .OurCourseMain .OurCourseServiceMain{
+  /* grid-template-columns: 1fr; */
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 auto ; */
+    align-items: center;
+
+  }
+  
+  .OurCourseMain .SubmiteButton{
+    width: 40%;
+  }
+  
+  
+}

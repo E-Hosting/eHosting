@@ -1,0 +1,16 @@
+.SignUpDiv .SignUpButton {
+    background-color: #0073EC;
+    color: white;
+    border: 1px solid #0073EC;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.SignUpDiv .SignUpButton:hover {
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+    border: 1px solid #0073EC;
+    color: #0073EC;
+}
