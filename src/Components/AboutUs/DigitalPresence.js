@@ -11,13 +11,7 @@ function DigitalPresence() {
       descriptions:
         "Keep everyone focused and engaged with high quality, real-time audio and video, and a suite of collaborative tools.",
     },
-    {
-      id: "2",
-      img: "../img/aboutus2.svg",
-      title: "Open source is in our DNA",
-      descriptions:
-        "Increase social learning and knowledge sharing with our powerful communication platform. ",
-    },
+    
     {
       id: "3",
       img: "../img/aboutus3.svg",
@@ -37,15 +31,9 @@ function DigitalPresence() {
       img: "../img/aboutus5.svg",
       title: "A Global Curricula",
       descriptions:
-        "A truly global platform, Education supports national and international curricula, such as IB, IGCSE and AP.",
+        "A truly global platform, Education supports national and international curricula",
     },
-    {
-      id: "6",
-      img: "../img/aboutus6.svg",
-      title: "Quizzes & Online Exams",
-      descriptions:
-        "Education provides everything you need to create high-quality quizzes and easy analysis tools for quiz scoring.",
-    },
+    
   ];
   return (
     <div>

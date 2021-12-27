@@ -1,0 +1,36 @@
+.containerSection2 {
+      padding-top: 70px;
+      padding-bottom: 80px;
+      background-color: #EBF3FF;
+      margin-top: 70px;
+      border-top: 1px solid #7c7c7c4b;
+      border-bottom: 1px solid #7c7c7c4b;
+
+}
+
+.containerSection2 h2 {
+      margin-top: 150px;
+      margin-bottom: 50px;
+      color: black;
+}
+
+.customCoursesBtn {
+      border: 1px solid black;
+      width: 200px;
+      color: black;
+}
+.customCoursesBtn:hover {
+      color: #0d6efd;
+      border: 1px solid #0d6efd;
+      transition: all .4s ease-in-out;
+
+}
+
+@media (max-width: 650px) {
+      .containerSection2 img {
+            width: 250px;
+      }
+      .containerSection2 h2 {
+            margin-top: 60px;
+      }
+}

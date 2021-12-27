@@ -1,31 +1,25 @@
 import React, { useState } from "react";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./calender.css";
-export default function NewPath(){
-  const  navigate=useNavigate();
+export default function NewPath() {
+  const navigate = useNavigate();
   const checkLogInUser = localStorage.getItem("uerLogin");
-    const handelUseNavigate=()=>{
-        if (checkLogInUser !== null) 
-        navigate('/Checkout')
-
-        else {
-          navigate('/Login')
-        }
-        
+  const handelUseNavigate = () => {
+    if (checkLogInUser !== null) navigate("/Checkout");
+    else {
+      navigate("/Login");
     }
-    return <Calender handelUseNavigate={handelUseNavigate}/>
+  };
+  return <Calender handelUseNavigate={handelUseNavigate} />;
 }
 function Calender(props) {
-  //   let minDateValue;
   let today = new Date();
   let day = today.getDate();
   let month = today.getMonth() + 1; //January is 0 so need to add 1 to make it 1!
   let year = today.getFullYear();
-  //   let hour = today.getHours() + 1;
-  //   let minutes = today.getMinutes();
-  //   + "T" + hour + ":" + minutes;
-  let minDateValue = year + "-" + month + "-" + day;
 
+  let minDateValue = year + "-" + month + "-" + day;
+  let bookCourse = JSON.parse(localStorage.getItem("TitleCourse"));
   const [enteredDateFirst, setEnteredDateFirst] = useState({
     enteredDateFirst: minDateValue,
   });
@@ -34,6 +28,7 @@ function Calender(props) {
     startDate: "",
     endDate: "",
     time: "",
+    titlecorse: bookCourse.title1,
     id: 0,
   });
   const fullTimeSlots = [
@@ -52,11 +47,6 @@ function Calender(props) {
     console.log(enteredDateFirst);
     setForm({ ...form, [attr]: e.target.value });
     setTimeSlots(fullTimeSlots);
-    // let selectedDate = stringToDate(e.target.value);
-    // selectedDate.setDate(selectedDate.getDate());
-    // let newMinDate = dateToString(selectedDate);
-    // console.log(selectedDate);
-    // setMinEndDate(newMinDate);
   };
   const handelSelect = (e, attr) => {
     setForm({ ...form, [attr]: e.target.value });
@@ -106,7 +96,7 @@ function Calender(props) {
     }
     setForm({ ...form, [attr]: e.target.value });
   };
-  
+
   const handelSubmit = (e) => {
     e.preventDefault();
 
@@ -115,24 +105,20 @@ function Calender(props) {
       ? JSON.parse(localStorage.getItem("timeOfCourse"))
       : [];
 
-    // get the latest ID from the local storage saved data, if exists
-    let latestId = ourArray.length > 0 ? ourArray[ourArray.length - 1].id : 0;
+    // *****************
+    setForm({ ...form, titlecorse: bookCourse.title1 });
 
-    setForm({ ...form, id: ++latestId });
-    console.log(latestId);
-    form.id = latestId;
     ourArray.push(form);
     localStorage.setItem("timeOfCourse", JSON.stringify(ourArray));
     const checkLogInUser = localStorage.getItem("uerLogin");
     console.log(checkLogInUser);
-    // console.log(props)
-    if (checkLogInUser !== null) {
-        console.log("go");
-       props.handelUseNavigate();
-    } else {
-        console.log("no");
-        props.handelUseNavigate();
 
+    if (checkLogInUser !== null) {
+      console.log("go");
+      props.handelUseNavigate();
+    } else {
+      console.log("no");
+      props.handelUseNavigate();
     }
     setEnteredDateFirst("");
     setEnteredDateEnd("");
@@ -141,7 +127,6 @@ function Calender(props) {
     console.log(enteredDateFirst);
     console.log(enteredDateEnd);
     console.log(form);
-
   };
   const stringToDate = (stringDate) => {
     let stringDateValues = ("" + stringDate).split("-");
@@ -153,18 +138,10 @@ function Calender(props) {
     return dateValue;
   };
 
-  const dateToString = (dateVal) => {
-    let day = dateVal.getDate();
-    let month = dateVal.getMonth() + 1; //January is 0 so need to add 1 to make it 1!
-    let year = dateVal.getFullYear();
-    let stringDateVal = year + "-" + month + "-" + day;
-    return stringDateVal;
-  };
   return (
     <div className="calender-controls">
-    
       <div className="render-calender-form">
-        <form onSubmit={handelSubmit}  className="calender-form">
+        <form onSubmit={handelSubmit} className="calender-form">
           <div className="label-container">
             <label> Starting Date</label>
           </div>
@@ -190,7 +167,6 @@ function Calender(props) {
               dateChangeHandlerLast(e, "endDate");
             }}
             required
-
           />
           <div className="label-container">
             <label> Select Time</label>
@@ -206,18 +182,10 @@ function Calender(props) {
             {timeSlots.map((item) => {
               return <option value={item.value}>{item.text}</option>;
             })}
-            {/* <option disabled selected value="">
-            Select a time
-          </option>
-          <option value="2-5">2-5</option>
-          <option value="5-8">5-8</option>
-          <option value="8-11">8-11</option> */}
           </select>
-          <button className="submit-calender" >Submit </button>
+          <button className="submit-calender">Submit </button>
         </form>{" "}
       </div>
     </div>
   );
 }
-
-// export default Calender;

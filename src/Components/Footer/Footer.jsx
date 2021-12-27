@@ -6,56 +6,43 @@ function Footer(){
       return(
             <>
       <footer id="footer">
-      <div className="footer-newsletter">
-      <div className="container">
-            <div className="row">
-            <div className="col-lg-6">
-            <h4>Our Newsletter</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quisquam.</p>
-            </div>
-            <div className="col-lg-6">
-            <form action method="post"> <input type="email" name="email" placeholder="you@example.com" /><input type="submit" defaultValue="Subscribe" /> </form>
-            </div>
-            </div>
-      </div>
-      </div>
       <div className="footer-top">
       <div className="container">
             <div className="row">
             <div className="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Home</Link></li>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">About us</Link></li>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Services</Link></li>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Terms of service</Link></li>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Privacy policy</Link></li>
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="/Aboutus">About us</Link></li>
+                  <li><Link to="/programs">Services</Link></li>
+                  <li><Link to="/programs">Terms of service</Link></li>
+                  <li><Link to="/Aboutus">Privacy policy</Link></li>
             </ul>
             </div>
             <div className="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Web Design</Link></li>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Web Development</Link></li>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Product Management</Link></li>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Marketing</Link></li>
-                  <li><i className="bx bx-chevron-right" /> <Link to="#">Graphic Design</Link></li>
+                  <li><a href="https://www.w3schools.com/">Web Design</a></li>
+                  <li><a href="https://www.w3schools.com/">Web Development</a></li>
+                  <li><a href="https://www.w3schools.com/">Product Management</a></li>
+                  <li><a href="https://www.w3schools.com/">Marketing</a></li>
+                  <li><a href="https://www.w3schools.com/">Graphic Design</a></li>
             </ul>
             </div>
             <div className="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
-            <p> A108 Adam Street <br /> New York, NY 535022<br /> United States <br /><br /> <strong>Phone:</strong> +1 5589 55488 55<br /> <strong>Email:</strong> info@example.com<br /> </p>
+            <p> A108 Adam Street <br /> Jordan, NY 535022<br />Amman <br /><br /> <strong>Phone:</strong> 0777777777<br /> <strong>Email:</strong> eHosting@gmail.com<br /> </p>
             </div>
             <div className="col-lg-3 col-md-6 footer-info">
-            <h3>About E Hosting</h3>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-            <div className="social-links mt-3"> <Link to="#" className="twitter"><i className="fab fa-instagram"></i></Link> <Link to="#" className="facebook"><i className="fab fa-facebook"></i></Link> <Link to="#" className="instagram"><i className="fab fa-twitter"></i></Link> <Link to="#" className="linkedin"><i className="fab fa-linkedin"></i></Link> </div>
+            <h3>About EDU</h3>
+            <p>Education joins all your - learning needs -into one advanced platform giving your students, teachers and parents the right tools for a simpler and more connected learning experience.</p>
+            <div className="social-links mt-3"> <a href="https://twitter.com/" className="twitter"><i className="fab fa-twitter"></i></a> <a href="https://www.facebook.com/" className="facebook"><i className="fab fa-facebook"></i></a> <a href="https://www.instagram.com/" className="instagram"><i className="fab fa-instagram"></i></a> <a href="https://www.linkedin.com/feed/" className="linkedin"><i className="fab fa-linkedin"></i></a> </div>
             </div>
             </div>
       </div>
       </div>
       <div className="container">
-      <div className="copyright"> © Copyright <strong><span>E Hosting</span></strong>. All Rights Reserved </div>
+      <div className="copyright"> © Copyright <strong><span>EDU</span></strong>. All Rights Reserved </div>
       </div>
       </footer>
 
