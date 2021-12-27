@@ -106,12 +106,19 @@ export default function Hosting() {
 
   return (
     <>
-        <ol class="breadcrumb customBreadcrumb">
-        <li class="breadcrumb-item"><Link to="/">Home</Link></li>
-        <li class="breadcrumb-item"> <Link to="/programs">Programs & Courses</Link> </li>
-        <li class="breadcrumb-item active" aria-current="page">Courses</li>
-        </ol>
-          <h1 className="text-center">Courses</h1>
+      <ol className="breadcrumb customBreadcrumb">
+        <li className="breadcrumb-item">
+          <Link to="/">Home</Link>
+        </li>
+        <li className="breadcrumb-item">
+          {" "}
+          <Link to="/programs">Programs & Courses</Link>{" "}
+        </li>
+        <li className="breadcrumb-item active" aria-current="page">
+          Courses
+        </li>
+      </ol>
+      <h1 className="text-center">Courses</h1>
       <div className="HostingCoures">
         {Hosting}
         {/* <WordPressHosting  HostingArr={HostingArr}/> */}
