@@ -50,7 +50,7 @@ function Navbar(props) {
             </li>
             <Link to="/login"><button className="loginButton">Login</button></Link></> ) : (
                   <>
-                      <li className="nav-item">
+            <li className="nav-item">
             <Link className="nav-link active" aria-current="page" to="/" >Home</Link>
             </li>
             <li className="nav-item">
@@ -60,7 +60,7 @@ function Navbar(props) {
             <Link className="nav-link" to="/Aboutus">About us</Link>
             </li>
             <li className="nav-item">
-            <Link className="nav-link" to="/Profile">Profile</Link>
+            <Link className="nav-link customNavProfile" to="/Profile">Profile</Link>
             </li>
               <Link  className="loginButton" to="/" onClick={logOut}>Logout</Link>
                    </>

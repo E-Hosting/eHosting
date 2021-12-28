@@ -81,7 +81,7 @@ form.calender-form {
   flex-direction: column;
   border-radius: 2%;
   margin-left: 2em;
-  padding: 2em 0;
+  padding: 2em 0 3.9em;
 }
 
 .calender-form {
@@ -121,6 +121,11 @@ form.calender-form {
   font-weight: 400;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+}
+
+.submit-calender:hover {
+  background-color: #2a8bf3;
+  transition: all .4s ease-in-out;
 }
 
 @media (max-width: 800px) {

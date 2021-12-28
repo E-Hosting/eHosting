@@ -15,7 +15,7 @@ export default function NewPath() {
 function Calender(props) {
   let today = new Date();
   let day = today.getDate();
-  let month = today.getMonth() + 1; //January is 0 so need to add 1 to make it 1!
+  let month = today.getMonth() + 1; // January is 0 so need to add 1 to make it 1!
   let year = today.getFullYear();
 
   let minDateValue = year + "-" + month + "-" + day;
