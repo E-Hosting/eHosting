@@ -62,7 +62,6 @@ function Register(props) {
   return (
     <div className="RegisterToqa">
       <div className="TitleRegisterAndImg">
-        <h3>Own Your Digital Presence</h3>
         <img src="../img/LogInRegestrationimg.png" alt="Register Picture" />
         <p>Grow yourself by using our website as your foundation.</p>
       </div>

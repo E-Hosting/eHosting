@@ -47,7 +47,6 @@ function Login(props) {
         <div className="LogInToqa">
 
             <div className="TitleLogInAndImg">
-                <h3>Own Your Digital Presence</h3>
                 <img src="../img/LogInRegestrationimg.png" alt="Login picture" />
                 <p>Grow yourself by using our website as your foundation.</p>
             </div>
