@@ -177,8 +177,7 @@ function Calender(props) {
               handelSelect(e, "time");
             }}
             required
-            value={form.time}
-          >
+            value={form.time}>
             {timeSlots.map((item) => {
               return <option value={item.value}>{item.text}</option>;
             })}
